@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title>User account control</title>
+</head>
+<body>
+    <h1>User account control</h1>
+    <section class="note">
+        <p><a href="https://en.wikipedia.org/wiki/User_Account_Control">User account control</a> (<abbr title="User Account Control">UAC</abbr>) is a security feature that was introduced in Windows Vista. When <abbr title="User Account Control">UAC</abbr> is turned on, user accounts run most programs with restricted permissions.</p>
+        <p>Some programs still require administrative permissions, and when a program asks for these <strong>elevated</strong> permissions, the <abbr title="User Account Control">UAC</abbr> elevation dialog appears.</p>
+    </section>
+    <figure class="figure">
+        <figcaption class="right figure-caption"></figcaption>
+        <p><img src="../images/configuration/uac_prompt.png" class="img-fluid" alt="The UAC elevation dialog" /></p>
+        <figcaption class="figure-caption">The <abbr title="User Account Control">UAC</abbr> elevation dialog in Windows 10. You've probably seen this multiple times.</figcaption>
+    </figure>
+    <p>If you want MaxTo to be able to affect software that is running elevated, MaxTo itself needs to be running elevated. The switch on our configuration page allows MaxTo to run elevated when it starts up.</p>
+    <p>If you experience that MaxTo doesn't work with specific programs that are running elevated, this is most likely the reason.</p>
+    <section class="important">
+        <p>Please note that any program which runs elevated has access to everything on your machine.</p>
+    </section>
+
+</body>
+</html>

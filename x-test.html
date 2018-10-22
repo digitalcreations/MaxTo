@@ -1,0 +1,65 @@
+<html>
+<head>
+    <title>Test page</title>
+</head>
+<body>
+<h1>Test header</h1>
+<p class="lead">The point of this page is to show all of the different styles that are allowed to be used in the documentation. </p>
+<p>That means that a lot of the text on this page is longer than it needs to be, and some of it is just meaningless. The preceding paragraph should be a bit bigger than this one.</p>
+<h2>Test sub-header</h2>
+<p>Normal sized paragraph text. Note that this isn't purely Github Flavored Markdown, we use the <a href="https://github.com/lunet-io/markdig">Markdig</a> parser with these extensions:</p>
+<ul>
+<li>SmartyPants &mdash; allows you to turn three dashes into an em-dash.</li>
+<li>Special attributes &mdash; allows you to add CSS classes to anything</li>
+<li>Footnotes &mdash; because footnotes<a id="fnref:1" href="#fn:1" class="footnote-ref"><sup>1</sup></a> are fun</li>
+<li>Custom containers &mdash; because we sometimes need to hide stuff in boxes.</li>
+<li>Bootstrap &mdash; because our CSS is Bootstrap-based, this adds some nice classes for us.</li>
+<li>Figures &mdash; allows you to provide captions to anything that needs it.</li>
+<li>Definition lists &mdash; because sometimes you need those.</li>
+</ul>
+<p>All of our pages have YAML frontmatter to define the title (used in the table of contents).</p>
+<p>If you have some code you would like to show, this is how you do it:</p>
+<pre><code class="language-cs">items
+    .Where(i =&gt; i.Id % 3 == 0)
+    .SelectMany(i =&gt; i.Children)
+    .GroupBy(i =&gt; i.Category)
+    .Take(100);
+</code></pre>
+<h3>Third-level header</h3>
+<p>There are very specific reasons to do something like this. You can do quotes:</p>
+<div class="aside"><p>This is an aside. You should keep it short and to the point, e.g. to link to <a href="https://www.digitalcreations.no">something externally</a>.</p>
+</div>
+<blockquote class="blockquote">
+<p>Coffee. The finest organic suspension ever devised&hellip; I beat the Borg with it. - <strong>Captain Janeway</strong></p>
+</blockquote>
+<p>It would usually be a good idea to have text both before and after one of these block quotes.</p>
+<div class="note"><h3>Why didn't you just go with HTML?</h3>
+<p>I really like Markdown, but we had some requirements that really sends us into territory which could have been equally well-served with HTML.</p>
+<p>The Markdown extensions really makes Markdown seem more messy. Github Flavored Markdown itself is easy to read, these extensions are not as good.</p>
+<p>This note is a good example of a fenced block; it applies the <code>.note</code> class to a <code>&lt;div&gt;</code> it creates.</p>
+</div>
+<h2>Another level 2 header</h2>
+<p>Try to space out your headers so the flow of the document is easy to read.</p>
+<p>When you call out stuff in the user interface, e.g. <cite>you should click <em>Options</em>, then <em>Regions</em></cite>, you should use italic emphasis. <strong>Bold text</strong> is reserved for text that is important.</p>
+<div class="important"><p>Important blocks are easy to spot, but should be used sparingly, e.g. when talking about things that could result in destructive behavior.</p>
+<p>They are styled as a box in the same way as notes, but in a different color. You can choose to have a header inside, but the header should be a level 3 header.</p>
+</div>
+<h2>One more</h2>
+<p>This page is getting a bit long, but I don't care.</p>
+<p><a href="https://maxto.net" class="btn btn-primary btn-lg">Primary button</a>
+<a href="https://maxto.net" class="btn btn-default btn-lg">Default button</a></p>
+<figure class="figure">
+<p><img src="https://placem.at/things?w=640&amp;h=480" class="img-fluid" alt="Random image" /></p>
+<figcaption class="figure-caption">Images should have captions like this.</figcaption>
+</figure>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn:1">
+<p>This one isn't.<a href="#fnref:1" class="footnote-back-ref">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+</body>
+</html>
