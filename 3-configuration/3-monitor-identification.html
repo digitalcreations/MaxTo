@@ -1,0 +1,92 @@
+<html>
+<head>
+    <title>Monitor identification</title>
+</head>
+<body>
+    <h1>Monitor identification</h1>
+    <p class="lead">
+        You can pick between multiple ways to identify your monitors in MaxTo.
+    </p>
+
+    <p>
+        MaxTo has been designed to work as well as possible with multiple monitors. This means that we need to
+        have a unique identifier for each of your monitors.
+    </p>
+
+    <section class="note">
+        <p>
+            Note that in this document, we are talking about how monitors are identified in configuration files
+        and internally in MaxTo. This does not affect the user interface, but it affects behavior.
+        </p>
+
+        <p>
+            For almost every user we recommend leaving this setting at its default, which is identifying
+            by serial number.
+        </p>
+    </section>
+
+    <p>
+        Monitor identification is important because it is how MaxTo links a set of regions to a monitor.
+    </p>
+
+    <h2>Device names &mdash; how Windows identifies monitors</h2>
+    <p>
+        Windows assigns each monitor a <i>device name</i>. This usually takes the form <code>\\.\DISPLAY1</code>,
+        and as you can guess the number increases the more monitors you connect to your machine. The device name
+        is unique on one machine, but they are not tied to a specific monitor.
+    </p>
+
+    <p>
+        The device name is actually linked to the output port the monitor is connected to, numbered how your 
+        video driver wants it. This means that your device name for a monitor can change if:
+    </p>
+
+    <ol>
+        <li>You connect another monitor that gets given a lower number.</li>
+        <li>You swap around which monitor is connected where.</li>
+        <li>A monitor is disconnected, either because it is turned off or the cable is removed.</li>
+    </ol>
+
+    <h2>Property identification</h2>
+
+    <p>
+        The next step up from the device name, is trying to identify a monitor uniquely by 
+        looking at its properties. The properties MaxTo looks at when trying to identify a monitor are:
+    </p>
+
+    <ol>
+        <li>The friendly name (human-readable name of the monitor make and model)</li>
+        <li>Video card port it is connected to</li>
+        <li>Resolution (inc. DPI)</li>
+    </ol>
+
+    <p>
+        This is a good first step towards better monitor identification, but it has some pitfalls.
+        If you move the monitor cable to a different port on the video card, MaxTo will not recognize
+        the monitor.
+    </p>
+
+    <h2>Serial numbers</h2>
+    
+    <aside class="aside">
+        A <i>serial number</i> is a unique number assigned by the manufacturer that identifies that
+        specific monitor. Two monitors of the same make and model should always have distinct
+        serial numbers.
+    </aside>
+
+    <p>
+        The best possible way MaxTo could work, would allow you to share your settings across
+        multiple computers, and once you plug in a monitor MaxTo has seen before, no matter
+        at which video card port, MaxTo will load the regions that were last active on that
+        monitor. This is what identifying by the monitor's serial number does.
+    </p>
+
+    <section class="note">
+        <p>
+            Not all monitors present their serial number, and some video cards do not deliver This
+        information. For monitors where this is the case, MaxTo will fall back to identifying
+        that monitor by its properties.
+        </p>
+    </section>
+</body>
+</html>
