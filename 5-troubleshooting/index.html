@@ -1,0 +1,72 @@
+﻿<html>
+<head>
+    <title>Troubleshooting</title>
+</head>
+<body>
+    <h1>Troubleshooting</h1>
+
+    <p class="lead">If you should encounter any issues with MaxTo, here are some steps to help you identify what is happening.</p>
+
+    <section class="important">
+        <p>Some of these steps require advanced PC knowledge. We will explain as clearly as we can, and will be clear whenever we suggest doing anything destructive.</p>
+    </section>
+
+    <h2>Log files</h2>
+
+    <p>
+        MaxTo produces quite log data when it is installed and running. These are the locations where you can expect to find useful information should you experience a crash or unexpected behavior:
+    </p>
+
+    <h3>Runtime logs</h3>
+
+    <p>
+        This log file contains entries about what MaxTo is doing at specific points in time, including any crashes that MaxTo experience. You will find this file in <code>%AppData%\MaxTo\maxto.log</code>.
+    </p>
+
+    <section class="note">
+        <p>You can see the file paths we specify contain special variables (such as <code>%AppData%</code>). These expand into full paths on your machine, but can be different from computer to computer.</p>
+        <p>To quickly open the log file, hit Windows+R on your keyboard, and copy in the path to the file. Then press OK, and the file should open in your default text editor (usually Notepad).</p>
+    </section>
+
+<p>
+    Each line in this file is timestamped; and the file may grow quite large. If you can reliably reproduce your issue, it could be helpful to delete the log file before trying to reproduce the issue &mdash; that way there will be less data for us to read when we try to figure out what is going on.
+</p>
+
+<p>Here is an excerpt from the log file, with specific bits of information highlighted:</p>
+
+<pre><code class="shell">2018-11-26 21:36:42 [MaxTo.Core@2.0.0.0] [Information] 3 processes started
+2018-11-26 21:36:43 [MaxTo.Companion.x64@2.0.0.0] [Information] Found no specified configuration location file, using default settings location "C:\Users\vegar\AppData\Roaming\MaxTo"
+2018-11-26 21:36:43 [MaxTo.Companion.x86@2.0.0.0] [Information] Found no specified configuration location file, using default settings location "C:\Users\vegar\AppData\Roaming\MaxTo"
+2018-11-26 21:36:43 [MaxTo.UI@2.0.0.0] [Information] Activated "MaxTo.UI.ViewModels.NotificationIconViewModel"
+2018-11-26 21:36:44 [MaxTo.Companion.x64@2.0.0.0] [Information] Read shims from "C:\Users\vegar\AppData\Local\MaxTo\shims.json"
+2018-11-26 21:36:44 [MaxTo.Companion.x86@2.0.0.0] [Information] Read shims from "C:\Users\vegar\AppData\Local\MaxTo\shims.json"
+2018-11-26 21:36:44 [MaxTo.Companion.x64@2.0.0.0] [Information] Enabled hook
+2018-11-26 21:36:45 [MaxTo.Companion.x86@2.0.0.0] [Information] Enabled hook</code></pre>
+
+<p>Each line has a log level, which indicates the severity of what is being reported. The log levels are, in order from least to most important:</p>
+<dl>
+    <dt>Debug</dt>
+    <dd>Trivial events that specify in very intricate detail what is being done.</dd>
+    <dt>Information</dt>
+    <dd>Events that carry information about normal program behavior.</dd>
+    <dt>Warning</dt>
+    <dd>Events that may indicate something is off; but may be totally trivial.</dd>
+    <dt>Error</dt>
+    <dd>Something went wrong, but not badly enough that the program crashed.</dd>
+    <dt>Fatal</dt>
+    <dd>Something went so wrong that MaxTo couldn't recover and exited.</dd>
+</dl>
+
+<h3>Installation logs</h3>
+
+    <p>
+        If you use the normal installer, it generates a log file during installation in <code>%LocalAppData%\SquirrelTemp\SquirrelSetup.log</code>.
+    </p>
+
+    <section class="note">
+        <p>Note that the installation log may also contain information about other programs on your machine; as other program may use the same installer as MaxTo does.</p>
+    </section>
+
+
+</body>
+</html>
