@@ -1,33 +1,45 @@
 <html>
+
 <head>
     <title>Configuration location</title>
 </head>
+
 <body>
     <h1>Changing where your configuration is stored</h1>
     <p class="lead">MaxTo allows you to change where your configuration files are stored. </p>
     <div class="important">
         <p>This functionality is not exposed in the user interface, so you are working in advanced territory here.</p>
     </div>
-    <p>MaxTo will look for a <code>config.location</code> file in the following folders, in this order, and use the first file it finds:</p>
+    <p>MaxTo will look for a <code>config.location</code> file in the following folders, in this order, and use the
+        first file it finds:</p>
     <ol>
         <li><code>%AppData%\MaxTo</code></li>
         <li>Next to the <code>.exe</code> file</li>
         <li><code>%LocalAppData%\MaxTo</code> (which is where MaxTo will be installed)</li>
     </ol>
-    <p>If MaxTo cannot find that file in any of those locations, it will use <code>%AppData%\MaxTo</code> as the default settings location.</p>
+    <p>If MaxTo cannot find that file in any of those locations, it will use <code>%AppData%\MaxTo</code> as the
+        default settings location.</p>
     <div class="aside">
-        <p>Store your settings in Dropbox by putting <code>%USERPROFILE%\Dropbox</code> in your <code>config.location</code> file.</p>
+        <p>Store your settings in Dropbox by putting <code>%USERPROFILE%\Dropbox</code> in your <code>config.location</code>
+            file.</p>
     </div>
-    <p>The <code>config.location</code> file should be a text file and only contain a folder path. You can use environment variables here, so <code>%USERPROFILE%\Dropbox</code> is perfectly valid.</p>
-    <p>Note that MaxTo's settings are designed to be roamed, and putting your configuration in a Dropbox folder should work well.</p>
-    <p>If you want to use MaxTo as a <a href="https://en.wikipedia.org/wiki/Portable_application">portable application</a>, you can enter only <code>.\settings</code> in this file, and MaxTo will store the configuration in the <code>settings</code> subdirectory next to the executable.</p>
+    <p>The <code>config.location</code> file should be a text file and only contain a folder path. You can use
+        environment variables here, so <code>%USERPROFILE%\Dropbox</code> is perfectly valid.</p>
+    <p>Note that MaxTo's settings are designed to be roamed, and putting your configuration in a Dropbox folder should
+        work well.</p>
+    <p>If you want to use MaxTo as a <a href="https://en.wikipedia.org/wiki/Portable_application">portable application</a>,
+        you can enter only <code>.\settings</code> in this file, and MaxTo will store the configuration in the <code>settings</code>
+        subdirectory next to the executable.</p>
     <div class="note">
-        <p>The <code>config.location</code> file supports <a href="https://en.wikipedia.org/wiki/Environment_variable">environment variables</a>. Some environment variables point to specific locations on your machine:</p>
+        <p>The <code>config.location</code> file supports <a href="https://en.wikipedia.org/wiki/Environment_variable">environment
+                variables</a>. Some environment variables point to specific locations on your machine:</p>
         <dl>
             <dt><code>%AppData%</code></dt>
-            <dd>The user directory where programs can store settings that will be moved between computers where the same user is logged in. This is known as roaming. Usually something like <code>C:\Users\username\AppData\Roaming</code>.</dd>
+            <dd>The user directory where programs can store settings that will be moved between computers where the
+                same user is logged in. This is known as roaming. Usually something like <code>C:\Users\username\AppData\Roaming</code>.</dd>
             <dt><code>%LocalAppData%</code></dt>
-            <dd>The user directory where programs can store settings that is only kept on this computer. Usually something like <code>C:\Users\username\AppData\Local</code>.</dd>
+            <dd>The user directory where programs can store settings that is only kept on this computer. Usually
+                something like <code>C:\Users\username\AppData\Local</code>.</dd>
             <dt><code>%UserProfile%</code></dt>
             <dd>
                 <p>The user directory. Usually something like <code>C:\Users\username</code>.</p>
@@ -36,4 +48,5 @@
     </div>
 
 </body>
+
 </html>
