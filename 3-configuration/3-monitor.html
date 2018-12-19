@@ -1,12 +1,20 @@
 <html>
 <head>
-    <title>Monitor identification</title>
+    <title>Monitor settings</title>
 </head>
 <body>
-    <h1>Monitor identification</h1>
+    <h1>Monitor settings</h1>
+
+    <aside class="important">
+        If you change any of these settings, your regions will appear to reset. This happens because MaxTo now looks for the regions for
+        a monitor in a different location. If you change the settings back, your old regions will reappear.
+    </aside>
+
     <p class="lead">
-        You can pick between multiple ways to identify your monitors in MaxTo.
+        You can change how MaxTo internally identifies monitors, and if you want to have separate regions on separate virtual desktops.
     </p>
+
+    <h2>Monitor identification</h2>
 
     <p>
         MaxTo has been designed to work as well as possible with multiple monitors. This means that we need to
@@ -29,7 +37,7 @@
         Monitor identification is important because it is how MaxTo links a set of regions to a monitor.
     </p>
 
-    <h2>Device names &mdash; how Windows identifies monitors</h2>
+    <h3>Device names &mdash; how Windows identifies monitors</h3>
     <p>
         Windows assigns each monitor a <i>device name</i>. This usually takes the form <code>\\.\DISPLAY1</code>,
         and as you can guess the number increases the more monitors you connect to your machine. The device name
@@ -47,7 +55,7 @@
         <li>A monitor is disconnected, either because it is turned off or the cable is removed.</li>
     </ol>
 
-    <h2>Property identification</h2>
+    <h3>Property identification</h3>
 
     <p>
         The next step up from the device name, is trying to identify a monitor uniquely by 
@@ -66,9 +74,9 @@
         the monitor.
     </p>
 
-    <h2>Serial numbers</h2>
+    <h3>Serial numbers</h3>
     
-    <aside class="aside">
+    <aside>
         A <i>serial number</i> is a unique number assigned by the manufacturer that identifies the
         specific monitor. Two monitors of the same make and model should always have distinct
         serial numbers.
@@ -86,6 +94,41 @@
         Not all monitors present their serial number, and some video cards do not provide this
         information. For monitors where this is the case, MaxTo will fall back to identifying
         that monitor by its properties.
+        </p>
+    </section>
+
+    <h2>Virtual desktops</h2>
+
+    <aside>
+        <p>
+            Windows keyboard shortcuts for using virtual desktops:
+        </p>
+
+        <dl>
+            <dt><kbd>Windows+Control+Left/Right</kbd></dt>
+            <dd>Moves to the virtual desktop in that direction</dd>
+
+            <dt><kbd>Windows+Control+D</kbd></dt>
+            <dd>Create a new virtual desktop</dd>
+
+            <dt><kbd>Windows+Control+F4</kbd></dt>
+            <dd>Remove the current virtual desktop</dd>
+        </dl>
+    </aside>
+
+    <p>
+        With Windows 10, Microsoft introduced a feature known as <a href="https://support.microsoft.com/en-us/help/4028538/windows-10-multiple-desktops">Virtual Desktops</a>. 
+        This feature lets you pretend to have more monitors than you have, by keeping separate windows on each virtual desktop, and letting you quickly switch between them.
+    </p>
+
+    <p>
+        MaxTo can set up separate regions on each virtual desktop, or you can keep the same regions on all of them. Using this setting, this becomes easier to control.
+    </p>
+
+    <section class="important">
+        <p>
+            Note that virtual desktops are not numbered, even though Windows makes it appear as if they are. This means that if you remove and create a virtual desktop,
+            MaxTo will see the created virtual desktop as a completely new virtual desktop, because of how Windows work internally.
         </p>
     </section>
 </body>
