@@ -1,0 +1,145 @@
+<html>
+
+<head>
+    <title>Monitor settings</title>
+</head>
+
+<body>
+    <h1>Monitor settings</h1>
+
+    <aside class="important">
+        If you change any of these settings, your regions will appear to reset. This happens because MaxTo now looks
+        for the regions for
+        a monitor in a different location. If you change the settings back, your old regions will reappear.
+    </aside>
+
+    <p class="lead">
+        You can change how MaxTo internally identifies monitors, and if you want to have separate regions on separate
+        virtual desktops.
+    </p>
+
+    <h2>Monitor identification</h2>
+
+    <p>
+        MaxTo has been designed to work as well as possible with multiple monitors. This means that we need to
+        have a unique identifier for each of your monitors.
+    </p>
+
+    <section class="note">
+        <p>
+            Note that in this document, we are talking about how monitors are identified in configuration files
+            and internally in MaxTo. <b>This does not affect the user interface, but it affects behavior.</b>
+        </p>
+
+        <p>
+            For almost every user we recommend leaving this setting at its default, which is identifying
+            by serial number.
+        </p>
+    </section>
+
+    <p>
+        Monitor identification is important because it is how MaxTo links a set of regions to a monitor.
+    </p>
+
+    <h3>Device names &mdash; how Windows identifies monitors</h3>
+    <p>
+        Windows assigns each monitor a <i>device name</i>. This usually takes the form <code>\\.\DISPLAY1</code>,
+        and as you can guess the number increases the more monitors you connect to your machine. The device name
+        is unique on one machine, but they are not tied to a specific monitor.
+    </p>
+
+    <p>
+        The device name is actually linked to the output port the monitor is connected to, numbered how your
+        video driver wants it. This means that your device name for a monitor can change if:
+    </p>
+
+    <ol>
+        <li>You connect another monitor that gets given a lower number.</li>
+        <li>You swap around which monitor is connected where.</li>
+        <li>A monitor is disconnected, either because it is turned off or the cable is removed.</li>
+    </ol>
+
+    <h3>Property identification</h3>
+
+    <p>
+        The next step up from the device name, is trying to identify a monitor uniquely by
+        looking at its properties. The properties MaxTo looks at when trying to identify a monitor are:
+    </p>
+
+    <ol>
+        <li>The friendly name (human-readable name of the monitor make and model)</li>
+        <li>Video card port it is connected to</li>
+        <li>Resolution (inc. DPI)</li>
+    </ol>
+
+    <p>
+        This is a good first step towards better monitor identification, but it has some pitfalls.
+        If you move the monitor cable to a different port on the video card, MaxTo will not recognize
+        the monitor.
+    </p>
+
+    <h3>Serial numbers</h3>
+
+    <aside>
+        A <i>serial number</i> is a unique number assigned by the manufacturer that identifies the
+        specific monitor. Two monitors of the same make and model should always have distinct
+        serial numbers.
+    </aside>
+
+    <p>
+        The best possible way MaxTo could work, would allow you to share your settings across
+        multiple computers, and once you plug in a monitor MaxTo has seen before, no matter
+        at which video card port, MaxTo will load the regions that were last active on that
+        monitor. This is what identifying by the monitor's serial number does.
+    </p>
+
+    <section class="note">
+        <p>
+            Not all monitors present their serial number, and some video cards do not provide this
+            information. For monitors where this is the case, MaxTo will fall back to identifying
+            that monitor by its properties.
+        </p>
+    </section>
+
+    <h2>Virtual desktops</h2>
+
+    <aside>
+        <p>
+            Windows keyboard shortcuts for using virtual desktops:
+        </p>
+
+        <dl>
+            <dt><kbd>Windows+Control+Left/Right</kbd></dt>
+            <dd>Moves to the virtual desktop in that direction</dd>
+
+            <dt><kbd>Windows+Control+D</kbd></dt>
+            <dd>Create a new virtual desktop</dd>
+
+            <dt><kbd>Windows+Control+F4</kbd></dt>
+            <dd>Remove the current virtual desktop</dd>
+        </dl>
+    </aside>
+
+    <p>
+        With Windows 10, Microsoft introduced a feature known as
+        <a href="https://support.microsoft.com/en-us/help/4028538/windows-10-multiple-desktops">Virtual Desktops</a>.
+        This feature lets you pretend to have more monitors than you have, by keeping separate windows on each virtual
+        desktop, and letting you quickly switch between them.
+    </p>
+
+    <p>
+        MaxTo can set up separate regions on each virtual desktop, or you can keep the same regions on all of them.
+        Using this setting, this becomes easier to control.
+    </p>
+
+    <section class="important">
+        <p>
+            Note that virtual desktops are not numbered, even though Windows makes it appear as if they are. This means
+            that if you remove and create a virtual desktop,
+            MaxTo will see the created virtual desktop as a completely new virtual desktop, because of how Windows
+            works internally.
+        </p>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <title>Window behavior</title>
+</head>
+
+<body>
+    <h1>Window behavior</h1>
+    <p class="lead">MaxTo has some nice tricks to make resizing windows even easier.</p>
+
+    <h2>Window transparency</h2>
+
+    <p>
+        When you move or resize a window, MaxTo can make the window partially transparent. This makes it possible to
+        see what is behind the window you are moving.
+    </p>
+
+    <p>
+        If you find this feature distracting, you can turn it off in the Settings, or set <code>behavior.transparentWindowsWhenMoving</code>
+        to <code>false</code> in the config file.
+    </p>
+
+    <h2>Window snapping</h2>
+
+    <p>
+        Snapping applies when you are resizing or moving a window. When one of the edges of the window you are moving
+        comes within range of a snappable edge, the edges will snap together.
+    </p>
+
+    <p>
+        Using these settings you control what can be snapped to.
+    </p>
+
+    <section class="note">
+        <dl>
+            <dt>Window edges</dt>
+            <dd>The borders of windows, but only the ones that are currently not obscured by other windows on top of
+                them.</dd>
+
+            <dt>Region edges</dt>
+            <dd>The borders of the currently active regions. These may be invisible to you, unless you have windows in
+                all your regions. Because they may be invisible, this is turned off by default.</dd>
+
+            <dt>Monitor edges</dt>
+            <dd>These are the sides of your monitors' working area.</dd>
+        </dl>
+    </section>
+</body>
+
+</html>
