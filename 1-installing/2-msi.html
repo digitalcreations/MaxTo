@@ -35,6 +35,17 @@
                     To get around this issue, delete the <code>%LocalAppData%\MaxTo</code> folder for the affected user profiles.
                 </p>
             </dd>
+
+            <dt>User installation of .NET Framework fails</dt>
+            <dd>
+                <p>
+                    MaxTo requires .NET Framework version 4.7.2. The normal installer (which is what the MSI runs on login) will attempt to install this dependency if it is not already installed. This can fail in some cases.
+                </p>
+
+                <p>
+                    We strongly recommend deploying the .NET Framework version 4.7.2 in addition to MaxTo.
+                </p>
+            </dd>
         </dl>
     </section>
 </body>
