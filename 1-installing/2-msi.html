@@ -15,6 +15,28 @@
     <p>When you install the MSI package, all the users on the machine will get their own copy of MaxTo installed the
         next time they log in.</p>
 
+    <p>It is important to note that when you run the MSI package, it will appear to do nothing (besides asking you for administrative permissions).</p>
+
+    <h2>Known pitfalls when deploying the MSI package</h2>
+
+    <section class="note">
+        <dl>
+            <dt>Nothing happens when users log in</dt>
+            <dd>
+                <p>
+                    The MSI package will not re-install MaxTo on login for users who have previously uninstalled MaxTo.
+                </p>
+
+                <p>
+                    It does this by checking for the existence of the <code>%LocalAppData%\MaxTo</code> folder. If this folder exists, MaxTo will not be installed on login.
+                </p>
+
+                <p>
+                    To get around this issue, delete the <code>%LocalAppData%\MaxTo</code> folder for the affected user profiles.
+                </p>
+            </dd>
+        </dl>
+    </section>
 </body>
 
 </html>
