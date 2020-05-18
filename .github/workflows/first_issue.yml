@@ -1,0 +1,12 @@
+name: First issue
+
+on: [issues]
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/first-interaction@v1
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        issue-message: 'Thank you for creating your first issue. We will get to it as soon as possible. This is an automated message designed to manage your expectations. We will most likely respond to your message during Norwegian business hours.\n\nIf you should think of additional information, please feel free to add it as a comment. If you are reporting a bug or incompatibility, make sure you include the versions of MaxTo, Windows and any incompatible program.'
