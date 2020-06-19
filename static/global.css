@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600;700&display=swap');
+
+:root {
+	--color-primary: #2595FF;
+	--color-primary-hue: 209.2;
+	--color-primary-sat: 100%;
+	--color-primary-lit: 57.3%;
+	--color-success: #5cb85c;
+	--color-success-background: #c3e6cb;
+	--color-success-border: #a0d8ad;
+	--color-info: #5bc0de;
+	--color-info-background: #bee5eb;
+	--color-info-border: #99d6e0;
+	--color-warning: #f0ad4e;
+	--color-warning-background: #ffeeba;
+	--color-warning-border: #ffe492;
+	--color-danger: #d9534f;
+	--color-danger-background: #f5c6cb;
+	--color-danger-border: #f0a6ad;
+	--color-light: #f5f8fa;
+	--color-dark: #122a38;
+	--color-default: #dddddd;
+	--color-background: #f8f8f8;
+	--color-box-border: #e5e5e5;
+
+	--font-family: 'Work Sans', sans-serif;
+
+	--font-size-tiny: 0.75rem;
+	--font-size-small: 0.875rem;
+	--font-size-base: 16px;
+	--font-size-h1: 2.5rem;
+	--font-size-h2: 1.5rem;
+
+	--padding-small: 10px;
+	--padding-medium: calc(var(--padding-small) * 2);
+	--padding-large: calc(var(--padding-small) * 3);
+	--padding-huge: calc(var(--padding-small) * 4);
+
+	--border-radius: 0.25rem;
+	--box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.05);
+	--box-shadow-raised: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+		0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+		0 12.5px 10px rgba(0, 0, 0, 0.06),
+		0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+		0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+		0 100px 80px rgba(0, 0, 0, 0.12);
+
+	--step-background-1: #999999;
+	--step-color-1: white;
+	--step-background-2: transparent;
+	--step-border-2: #999999;
+	--step-color-2: #999999;
+}
+
+body {
+	font-family: var(--font-family);
+	font-size: var(--font-size-base);
+	background: var(--color-background);
+	-webkit-font-smoothing: antialiased;
+	line-height: 1.4;
+	margin: 0;
+}
+
+body * {
+	box-sizing: border-box;
+}
+
+h1 {
+	font-size: var(--font-size-h1);
+	font-weight: 300;
+}
+
+h2 {
+	font-size: var(--font-size-h2);
+	font-weight: 400;
+	color: #000;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 1.5rem;
+	line-height: 3.75rem;
+	flex: 0;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+p {
+	color: #555555;
+	line-height: 1.8;
+}
+
+p.lead {
+	font-size: 1.5rem;
+	font-weight: 200;
+}
+
+
+b {
+	font-weight: 700;
+}
+
+table {
+	border: 1px solid var(--color-box-border);
+	box-shadow: var(--box-shadow);
+	width: 100%;
+	border-radius: var(--border-radius);
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table thead th {
+	vertical-align: bottom;
+}
+
+table th, table td {
+	padding: 1.25rem 1.875rem;
+}
+
+table th {
+	color: #999999;
+	font-weight: 400;
+	text-align: left;
+}
+
+table tbody tr:nth-child(2n+1) {
+	background-color: rgba(0, 0, 0, 0.05);
+}
+
+pre, code {
+	font-family: 'Consolas', 'Courier New', monospace;
+}
+
+/* article > pre {
+	padding: var(--padding-large);
+	background: white;
+} */
+
+figure {
+	margin: 0;
+	position: relative;
+	margin-bottom: 15px
+}
+
+figure img {
+	border-radius: var(--border-radius);
+	width: 100%;
+}
+
+figure figcaption {
+	position: absolute;
+	left: 15px;
+	bottom: -15px;
+	max-width: calc(75% - 30px);
+	padding: var(--padding-small);
+
+	background: white;
+	border: 1px solid var(--color-box-border);
+	border-radius: var(--border-radius);
+	box-shadow: var(--box-shadow);
+	font-size: 0.875rem;
+}
+
+ol {
+	counter-reset: li;
+	list-style: none;
+	padding-left: 55px;
+	margin-left: 0;
+}
+
+ol li {
+	counter-increment: li;
+	position: relative;
+	min-height: 40px;
+}
+
+ol li:before {
+	content: counter(li);
+
+	transform: translate(0, -50%);
+    position: absolute;
+    top: .9em;
+    left: -55px;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: center;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+	box-shadow: var(--box-shadow);
+    background: var(--step-background-1);
+    color: var(--step-color-1);
+	border: 2px solid  var(--step-background-1);
+}
+
+ol li li:before {
+	color: var(--step-color-2);
+    background: var(--step-background-2);
+    border-color: var(--step-border-2);
+}
+
+ol li li:not(:first-child) {
+    margin-top: .5rem;
+}
