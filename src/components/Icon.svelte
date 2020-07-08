@@ -4,6 +4,7 @@ import { onMount } from 'svelte';
 export let name;
 export let set;
 export let size = 'normal';
+export let inline = false;
 
 let svg = '';
 
@@ -16,6 +17,10 @@ onMount(async() => {
 <style>
 figure {
     margin: 0;
+}
+
+figure.inline {
+    display: inline-block;
 }
 
 figure :global(svg) {
@@ -51,6 +56,7 @@ figure.size-giant :global(svg) {
 
 <figure 
     aria-label="Icon {name}"
+    class:inline
     class:size-normal={size == 'normal'}
     class:size-medium={size == 'medium'}
     class:size-large={size == 'large'}

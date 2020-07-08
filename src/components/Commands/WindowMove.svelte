@@ -1,5 +1,5 @@
 <script>
-import { Command, CommandExample, Code } from '../../../../../components.js';
+import { Command, CommandExample, Code } from '../../components.js';
 </script>
 
 <h2>Moving a window directionally</h2>

@@ -4,32 +4,25 @@ import Accordion from './Accordion.svelte';
 import AccordionItem from './AccordionItem.svelte';
 import SegoeIcon from './SegoeIcon.svelte';
 
-export let command;
-$: commandArguments = Object.keys(command.arguments).map(k => ({ name: k, ...command.arguments[k] }));
+export let trigger;
+$: triggerArguments = Object.keys(trigger.arguments).map(k => ({ name: k, ...trigger.arguments[k] }));
 </script>
 
 <div style="float: right">
-    <SegoeIcon icon={command.icon}></SegoeIcon>
+    <SegoeIcon icon={trigger.icon}></SegoeIcon>
 </div>
 
-<h1>{command.displayName}</h1>
+<h1>{trigger.displayName}</h1>
 
 <p>
-{command.detailedDescription}
+{trigger.detailedDescription}
 </p>
-
-{#if !command.isRecipeCapable}
-<Alert kind=info>
-    <h2>Cannot be used in recipes</h2>
-    <p>This command cannot be used in recipes, but it is available from the command line.</p>
-</Alert>
-{/if}
 
 <h2>Arguments</h2>
 
-{#if commandArguments.length > 0}
+{#if triggerArguments.length > 0}
 <Accordion collapsible={false}>
-    {#each commandArguments as argument}
+    {#each triggerArguments as argument}
     <AccordionItem>
         <p slot=title>
             <code>{argument.name}</code> &mdash; {argument.title}
@@ -44,6 +37,6 @@ $: commandArguments = Object.keys(command.arguments).map(k => ({ name: k, ...com
 </Accordion>
 {:else}
 <p>
-  This command does not accept arguments.
+   This trigger does not accept arguments.
 </p>
 {/if}

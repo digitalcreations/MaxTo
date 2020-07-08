@@ -15,9 +15,9 @@ function map(name, command) {
 
 export async function preload(page) {
     const { category } = page.params;
-    const res = await this.fetch(`commands.json`);
+    const res = await this.fetch(`triggers.json`);
     const { en } = await res.json();
-    return { category, commands: filterCategory(en, category) };
+    return { category, triggers: filterCategory(en, category) };
 }
 </script>
 
@@ -25,20 +25,20 @@ export async function preload(page) {
   import { Alert, Card, SectionList, SectionCard, Badge, Accordion, AccordionItem, Carousel, Link, Tabs, Tab, Keys, LinkList, LinkListItem, SegoeIcon } from "../../../../components.js";
   
   export let category;
-  export let commands;
+  export let triggers;
 </script>
 
 <svelte:head>
-  <title>MaxTo commands reference</title>
+  <title>MaxTo triggers reference</title>
 </svelte:head>
 
-<h1>These are the commands in the <b>{category}</b> category.</h1>
+<h1>These are the triggers in the <b>{category}</b> category.</h1>
 
 <LinkList>
-    {#each commands as command}
-    <LinkListItem href={`/reference/commands/${command.category}/${command.name}`}>
-        <SegoeIcon icon={command.icon}></SegoeIcon>
-        {command.displayName} <small>{command.category}:{command.name}</small>
+    {#each triggers as trigger}
+    <LinkListItem href={`/reference/triggers/${trigger.category}/${trigger.name}`}>
+        <SegoeIcon icon={trigger.icon}></SegoeIcon>
+        {trigger.displayName} <small>{trigger.category}:{trigger.name}</small>
     </LinkListItem>
     {/each}
 </LinkList>

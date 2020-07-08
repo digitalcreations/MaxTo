@@ -1,5 +1,10 @@
 <script>
-  import { Alert, Card, Badge, Accordion, AccordionItem, Carousel, Link, Tabs, Tab, Keys } from "../components.js";
+  import { ArticleCard, Alert, Card, Badge, Accordion, AccordionItem, Carousel, Link, Tabs, Tab, Keys } from "../components.js";
+  
+const articles = [
+	{ title: "Adding DNS records and templates", href: "/dns" },
+	{ title: "Removing DNS records and templates", href: "/dns" }
+];
 </script>
 
 <svelte:head>
@@ -23,6 +28,21 @@
   </p>
 
   <Card>
+    <span slot="badge">
+      <Badge text="New" color="primary" />
+    </span>
+
+    <h5 class="type-title">Open Sans</h5>
+    <div class="type-example">
+      <span>Ab</span>
+    </div>
+  </Card>
+  
+  <ArticleCard title="Hosting" icon="link" {articles}></ArticleCard>
+  
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum minus quaerat adipisci quidem quam non nisi quas numquam sint, cupiditate perspiciatis eius maxime reprehenderit optio voluptas inventore, aliquam et necessitatibus.</p>
+  
+    <Card type="stacked">
     <span slot="badge">
       <Badge text="New" color="primary" />
     </span>

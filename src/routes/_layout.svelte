@@ -1,85 +1,79 @@
 <script context="module">
-    import * as commands from '../commands.js';
-    export const preload = commands.preload;
+	async function getJson(that, what) {
+		const res = await that.fetch(what);
+		const { en } = await res.json();
+		return en;
+	}
+
+	export async function preload() {
+		const [ triggers, commands ] = await Promise.all([
+			getJson(this, 'triggers.json'),
+			getJson(this, 'commands.json')
+		]);
+		
+		return { triggers, commands };
+	}
 </script>
 
 <script>
-import { SplitView, TableOfContents, Badge, Breadcrumbs } from '../components.js';
-import { mapToTableOfContents } from '../commands.js';
-
+import { ArticleSummary, SplitView, TableOfContents, Badge, Breadcrumbs } from '../components.js';
+import contents from '../contents.js';
+	
 export let commands;
+export let triggers;
 
-const contents = [
-	{
-		title: "Tutorial",
-		href: "/tutorial",
-		children: [
-			{
-				title: "What are regions?",
-				href: "/tutorial/regions",
-			},
-			{
-				title: "Keyboard shortcuts",
-				href: "/tutorial/keyboard",
-			},
-			{
-				title: "Command line",
-				href: "/tutorial/cli"
-			},
-			{
-				title: "Virtual desktops",
-				href: "/tutorial/virtual_desktops"
-			}
-		]
-	},
-	{
-		title: "How-to",
-		href: "/how-to",
-		children: [
-			{
-				title: "Joining multiple monitors",
-				href: "/how-to/join-multiple-monitors"
-			},
-			{
-				title: "Launching a web browser",
-				href: "/how-to/launch-web-browser"
-			},
-			{
-				title: "Locate a specific window",
-				href: "/how-to/locate-window"
-			},
-			{
-				title: "Lock window in place",
-				href: "/how-to/lock-window"
-			}
-		]
-	},
-	{
-		title: 'Reference manual',
-		href: '/reference',
-		children: [
-			{
-				title: 'Triggers',
-				href: '/reference/triggers',
-				children: [
+export let categories = {
+	trigger: [
+		{ name: "window", title: "Window" },
+		{ name: "windows", title: "Windows" },
+		{ name: "maxto", title: "MaxTo" },
+		{ name: "virtualdesktop", title: "Virtual desktop" },
+		{ name: "monitor", title: "Monitor" },
+		{ name: "network", title: "Network" },
+		{ name: "keyboard", title: "Keyboard" },
+	],
+	command: [
+		{ name: "window", title: "Window" },
+		{ name: "ui", title: "UI" },
+		{ name: "mouse", title: "Mouse" },
+		{ name: "regions", title: "Regions" },
+		{ name: "license", title: "License" },
+		{ name: "settings", title: "Settings" }
+	]
+}
 
-				]
-			},
-			{
-				title: 'Commands',
-				href: '/reference/commands',
-				children: mapToTableOfContents(commands)
-			},
-			{
-				title: 'Settings',
-				href: '/reference/settings',
-				children: [
-					
-				]
-			}
-		]
-	}
-];
+function filterCategory(triggers, category) {
+    return Object.keys(triggers)
+        .filter(k => k.startsWith(category + ":"))
+        .map(k => map(k, triggers[k]))
+}
+
+function map(name, triggerOrCommand) {
+    return {
+        category: name.substr(0, name.indexOf(':')),
+        name: name.substr(name.indexOf(':') + 1),
+        ...triggerOrCommand
+    };
+}
+
+function mapToTableOfContents(triggerOrCommand, what) {
+    return categories[what]
+        .map(category => ({
+            href: `/reference/${what}s/${category.name}`,
+            ...category,
+            children: filterCategory(triggerOrCommand, category.name)
+                .map(command => ({
+                    href: `/reference/${what}s/${category.name}/${command.name}`,
+                    title: `${command.category}:${command.name} — ${command.displayName}`
+                }))
+		}));
+}
+
+const reference = contents
+	.find(c => c.href == "/reference");
+
+reference.children.find(c => c.href == "/reference/triggers").children = mapToTableOfContents(triggers, 'trigger');
+reference.children.find(c => c.href == "/reference/commands").children = mapToTableOfContents(commands, 'command');
 </script>
 
 <style>
@@ -136,26 +130,8 @@ const contents = [
 			<Breadcrumbs {contents} />
 		</nav>
 
-		<article><slot></slot></article>
+		<ArticleSummary>
+			<article><slot></slot></article>
+		</ArticleSummary>
 	</main>
 </SplitView>
-<!-- 
-<section class="outer">
-	<nav>
-		<a class="logo" href="/">
-			<img src="logo.svg" alt="MaxTo logo" />
-			<span>MaxTo</span> 
-			<Badge text="2.1.0" color="success" />
-		</a>
-
-		<TableOfContents {contents} />
-	</nav>
-
-	<main>
-		<nav class="breadcrumbs">
-			<Breadcrumbs {contents} />
-		</nav>
-
-		<article><slot></slot></article>
-	</main>
-</section> -->

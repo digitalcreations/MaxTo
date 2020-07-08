@@ -1,5 +1,7 @@
 <script>
-  import { Alert, Card, SectionList, SectionCard, Badge, Accordion, AccordionItem, Carousel, Link, Tabs, Tab, Keys } from "../components.js";
+  import { Alert, ArticleCard, Card, SectionList, SectionCard, Badge, Accordion, AccordionItem, Carousel, Link, Tabs, Tab, Keys } from "../components.js";
+  
+  import contents from '../contents.js';
 </script>
 
 <svelte:head>
@@ -10,8 +12,8 @@
 
 <p>We've divided MaxTo's documentation into 3 separate sections, which you can navigate to quickly below.</p>
 
-<SectionList>
-    <SectionCard href="/tutorial" title="Tutorial" text="Get started with MaxTo, and discover some cool things." icon="map"></SectionCard>
-    <SectionCard href="/how-to" title="How-to" text="Answers to common things people want to use MaxTo for." icon="map-signs"></SectionCard>
-    <SectionCard href="/reference" title="Reference" text="Detailed documentation about settings, triggers and commands." icon="book"></SectionCard>
-</SectionList>
+<section>
+  <ArticleCard href="/tutorial" title="Tutorial" icon="map" articles={contents[0].children} color="success" />
+  <ArticleCard href="/how-to" title="How do I...?" icon="map-signs" articles={contents[1].children} color="primary" />
+  <ArticleCard href="/reference" title="Reference manual" icon="book" articles={contents[2].children} color="danger" />
+</section>

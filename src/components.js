@@ -1,24 +1,57 @@
-import Icon from './components/Icon.svelte';
-import SectionCard from './components/SectionCard.svelte';
-import SectionList from './components/SectionList.svelte';
-import Card from './components/Card.svelte';
-import Badge from './components/Badge.svelte';
 import Accordion from './components/Accordion.svelte';
 import AccordionItem from './components/AccordionItem.svelte';
-import Carousel from './components/Carousel.svelte';
 import Alert from './components/Alert.svelte';
-import Link from './components/Link.svelte';
-import Tabs from './components/Tabs.svelte';
-import Tab from './components/Tab.svelte';
-import TableOfContents from './components/TableOfContents.svelte';
+import AnnotatedImage from './components/AnnotatedImage.svelte';
+import Annotation from './components/Annotation.svelte';
+import ArticleCard from './components/ArticleCard.svelte';
+import Badge from './components/Badge.svelte';
 import Breadcrumbs from './components/Breadcrumbs.svelte';
-import Keys from './components/Keys.svelte';
+import Card from './components/Card.svelte';
+import Carousel from './components/Carousel.svelte';
 import Code from './components/Code.svelte';
-import SplitView from './components/SplitView.svelte';
-import LinkList from './components/LinkList.svelte';
-import LinkListItem from './components/LinkListItem.svelte';
 import Command from './components/Command.svelte';
 import CommandExample from './components/CommandExample.svelte';
+import Icon from './components/Icon.svelte';
+import Keys from './components/Keys.svelte';
+import Link from './components/Link.svelte';
+import LinkList from './components/LinkList.svelte';
+import LinkListItem from './components/LinkListItem.svelte';
+import SectionCard from './components/SectionCard.svelte';
+import SectionList from './components/SectionList.svelte';
 import SegoeIcon from './components/SegoeIcon.svelte';
+import SplitView from './components/SplitView.svelte';
+import Tab from './components/Tab.svelte';
+import TableOfContents from './components/TableOfContents.svelte';
+import Tabs from './components/Tabs.svelte';
+import Trigger from './components/Trigger.svelte';
+import ArticleSummary from './components/ArticleSummary.svelte';
 
-export { Icon, SegoeIcon, SectionList, SectionCard, Card, Command, CommandExample, Badge, Accordion, AccordionItem, Carousel, Alert, Link, Tabs, Tab, TableOfContents, Breadcrumbs, Keys, Code, SplitView, LinkList, LinkListItem };
+export { 
+    Accordion,
+    AccordionItem,
+    Alert,
+    AnnotatedImage,
+    Annotation,
+    ArticleCard,
+    ArticleSummary,
+    Badge,
+    Breadcrumbs,
+    Card,
+    Carousel,
+    Code,
+    Command,
+    CommandExample,
+    Icon,
+    Keys,
+    Link,
+    LinkList,
+    LinkListItem,
+    SectionCard,
+    SectionList,
+    SegoeIcon,
+    SplitView,
+    Tab,
+    TableOfContents,
+    Tabs,
+    Trigger
+ };

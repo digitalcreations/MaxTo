@@ -18,7 +18,6 @@ a {
 	transition: all 0.25s ease-out;
 	text-decoration: none;
     display: inline-block;
-	margin: .2rem;
 	padding: 0 0.5rem 0 0;
 	box-shadow: var(--box-shadow);
 	border-radius: var(--border-radius);

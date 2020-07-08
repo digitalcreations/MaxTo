@@ -125,8 +125,16 @@ table th {
 	text-align: left;
 }
 
-table tbody tr:nth-child(2n+1) {
+table:not(.bordered) tbody tr:nth-child(2n+1) {
 	background-color: rgba(0, 0, 0, 0.05);
+}
+
+table.bordered {
+	background: white;
+	border-collapse: collapse;
+}
+table.bordered th, table.bordered td {
+	border: 1px solid var(--color-box-border);
 }
 
 pre, code {
@@ -141,7 +149,7 @@ pre, code {
 figure {
 	margin: 0;
 	position: relative;
-	margin-bottom: 15px
+	margin-bottom: calc(15px + var(--padding-medium));
 }
 
 figure img {
@@ -161,6 +169,10 @@ figure figcaption {
 	border-radius: var(--border-radius);
 	box-shadow: var(--box-shadow);
 	font-size: 0.875rem;
+}
+
+li {
+	margin: var(--padding-small) 0;
 }
 
 ol {

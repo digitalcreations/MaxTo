@@ -75,6 +75,12 @@ button  {
     font-size: 0.75rem;
     color: #555555;
 }
+.level-3 li {
+    margin: calc(var(--padding-small) / 2) 0;
+}
+.level-4 a {
+    padding-left: var(--padding-huge);
+}
 </style>
 
 <svelte:window on:pushstate={update} on:popstate={update} />

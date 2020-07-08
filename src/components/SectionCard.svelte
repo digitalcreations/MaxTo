@@ -41,6 +41,7 @@ export let href;
     
     h1 {
         margin: 0;
+        font-size: 2rem;
     }
     
     figure {
@@ -51,6 +52,7 @@ export let href;
 
 <a rel=prefetch {href}>
     <Card>
+        <span slot="badge"><slot name="badge"/></span>
         <figure>
             <Icon set={iconSet} name={icon} size=huge  />
         </figure>
