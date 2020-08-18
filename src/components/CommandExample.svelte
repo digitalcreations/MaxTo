@@ -18,7 +18,9 @@ $: json = JSON.stringify({ command: `${category}:${name}`, parameters }, null, 4
 <Card>
     <Tabs>
         <Tab title="Command line" icon="terminal">
-            <Code icon="terminal">maxto {category} {name} {#each mappedParameters as { key, value }}/{key} "{value}" {/each}</Code>
+            <slot></slot>
+
+            <Code icon="terminal">maxto {category} {name} {#each mappedParameters as { key, value }}/{key} {#if !!value}"{value}" {/if}{/each}</Code>
             
             <p><small>You should be able to run this command on any system where MaxTo is installed, from either Command Prompt or Powershell. See <Link href="/tutorial/cli">the tutorial on using the command line</Link> for details.</small></p>
         </Tab>

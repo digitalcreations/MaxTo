@@ -1,5 +1,5 @@
 <script>
-import { Keys, AnnotatedImage, Annotation, Alert } from '../../components.js';
+import { Keys, AnnotatedImage, Annotation, Alert, Link } from '../../components.js';
 </script>
 
 <style>
@@ -101,3 +101,32 @@ table:not(.bordered) td:first-child {
 </p>
 
 <h2>How MaxTo helps</h2>
+
+<p>
+    MaxTo introduces a few extra, default keyboard shortcuts that allow you to quickly move windows between virtual desktops.
+</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>Keyboard shortcut</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    
+    <tbody>
+        <tr>
+            <td><Keys combination="Windows+Control+Alt+Left" /></td>
+            <td>Move window to previous virtual desktop</td>
+        </tr>
+        <tr>
+            <td><Keys combination="Windows+Control+Alt+Right" /></td>
+            <td>Move window to next virtual desktop</td>
+        </tr>
+    </tbody>
+</table>
+
+<p>
+    You can also work with virtual desktops in your recipes. Many commands support choosing virtual desktops, so you can place
+    windows quickly. See <Link href="/reference/commands/window/move">the move window command</Link> for an example.
+</p>

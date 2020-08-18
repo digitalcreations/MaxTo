@@ -5,9 +5,8 @@ export let alt;
 </script>
 
 <figure>
-    <img {src} {alt} />
-    
     <figcaption>{caption}</figcaption>
+    <img {src} {alt} />
     
     <slot></slot>
 </figure>
