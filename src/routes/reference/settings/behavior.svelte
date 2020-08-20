@@ -34,6 +34,6 @@ import { Keys, CommandExample } from '../../../components.js';
     will instead maximize the window to a region.
 </p>
 
-<CommandExample category="settings" name="set" parameters={{ "Setting": "behavior.passiveMode", "Toggle": null }}>
-    <p>This example will toggle <em>Passive mode</em> every time it is run.</p>
+<CommandExample category="settings" name="set" parameters={{ "Setting": "behavior.passiveMode", "Toggle": null }}
+   title="Toggle passive mode">
 </CommandExample>

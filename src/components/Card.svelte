@@ -1,6 +1,7 @@
 <script>
 export let type = "default";
 export let padding = true;
+export let title = null;
 </script>
 
 <style>
@@ -42,20 +43,23 @@ section.stacked:hover::after {
     right: -20px;
 }
 
+header h3 { margin: 0; padding: var(--padding-large); padding-bottom: 0; }
+
 /* tabs in cards */
-article > :global(.tabs:first-child) {
-    margin: calc(-1 * var(--padding-large));
-}
-article > :global(.tabs:first-child nav) {
+header, article > :global(.tabs) {
     background: rgba(0,0,0,0.025)
 }
-article > :global(.tabs:first-child nav button),
-article > :global(.tabs:first-child .content) {
+article > :global(.tabs) {
+    padding: 0 var(--padding-large);
+}
+article > :global(.tabs nav button),
+article > :global(.tabs .content) {
     padding: var(--padding-medium);
 }
 </style>
 
 <section class="card {type}" class:padding>
+    {#if !!title}<header><h3>{title}</h3></header>{/if}
     <aside class="badge"><slot name="badge" /></aside>
     <article><slot /></article>
 </section>
