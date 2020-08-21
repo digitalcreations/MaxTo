@@ -9,13 +9,14 @@ export let category;
 export let name;
 export let parameters;
 export let title = null;
+export let description = null;
 
 $: mappedParameters = Object.keys(parameters)
     .map(k => ({ key: k, value: parameters[k] }));
 $: json = JSON.stringify({ command: `${category}:${name}`, parameters }, null, 4);
 </script>
 
-<Card {title} padding={false}>
+<Card {title} {description} padding={false}>
     <Tabs>
         <Tab title="Command line" icon="terminal">
             <Code icon="terminal">maxto {category} {name} {#each mappedParameters as { key, value }}/{key} {#if !!value}"{value}" {/if}{/each}</Code>

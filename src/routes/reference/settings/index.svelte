@@ -14,7 +14,7 @@
 </style>
 
 <svelte:head>
-  <title>Settings - MaxTo reference manual</title>
+  <title>Settings &mdash; MaxTo reference manual</title>
 </svelte:head>
 
 <h1>MaxTo has a lot of settings, that can completely change how it works.</h1>
