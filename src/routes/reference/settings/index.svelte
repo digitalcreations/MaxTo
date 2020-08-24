@@ -28,7 +28,6 @@
     The settings are divided into multiple categories, depending on what they affect.
 </p>
 
-
 <LinkList>
     <LinkListItem href="/reference/settings/recipes">
         <SegoeIcon icon=61667></SegoeIcon>
@@ -102,3 +101,10 @@
         </section>
     </LinkListItem>
 </LinkList>
+
+<h2>Advanced topics</h2>
+
+<p>
+    You can <Link href="/reference/settings/location">change the location of your configuration</Link>, for instance if you want to 
+    run MaxTo as a portable program.
+</p>
