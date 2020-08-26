@@ -65,7 +65,38 @@ export default [
 				title: 'Settings',
 				href: '/reference/settings',
 				children: [
-					
+					{
+						title: "Recipes",
+						href: '/reference/settings/recipes'
+					},
+					{
+						title: "Window behavior",
+						href: '/reference/settings/behavior'
+					},
+					{
+						title: "Monitor",
+						href: '/reference/settings/monitor'
+					},
+					{
+						title: "Compatibility",
+						href: '/reference/settings/compatibility'
+					},
+					{
+						title: "Language",
+						href: '/reference/settings/language'
+					},
+					{
+						title: "Updates",
+						href: '/reference/settings/updates'
+					},
+					{
+						title: "Error reporting",
+						href: '/reference/settings/error_reporting'
+					},
+					{
+						title: "License",
+						href: '/reference/settings/license'
+					}
 				]
 			}
 		]

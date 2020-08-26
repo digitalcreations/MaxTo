@@ -25,6 +25,7 @@ import TableOfContents from './components/TableOfContents.svelte';
 import Tabs from './components/Tabs.svelte';
 import Trigger from './components/Trigger.svelte';
 import ArticleSummary from './components/ArticleSummary.svelte';
+import SettingsExample from './components/SettingsExample.svelte';
 
 export { 
     Accordion,
@@ -49,6 +50,7 @@ export {
     SectionCard,
     SectionList,
     SegoeIcon,
+    SettingsExample,
     SplitView,
     Tab,
     TableOfContents,

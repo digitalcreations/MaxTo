@@ -12,7 +12,8 @@ section {
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
     position: relative;
-    margin-bottom: var(--padding-large);    
+    margin-bottom: var(--padding-large);
+    overflow: hidden;
 }
 
 section.padding {

@@ -1,5 +1,5 @@
 <script>
-import { Keys, CommandExample, Alert, Link } from '../../../components.js';
+import { Keys, CommandExample, Alert, Link, SettingsExample } from '../../../components.js';
 </script>
 
 <svelte:head>
@@ -19,6 +19,17 @@ import { Keys, CommandExample, Alert, Link } from '../../../components.js';
     that if it sees program A running, it should not use feature B for that program. Compatibility shims always
     affect a single program (or software suite), and does not disable MaxTo features for all programs.
 </p>
+
+<SettingsExample 
+    name="compatibility"
+    alt="Compatibility settings in the MaxTo user interface"
+    config={{   "shims": {
+    "toggled": {
+      "acrobat_reader": false
+    }
+  } }}
+    explanation="With this configuration, the shim for Adobe Acrobat Reader is disabled, while all other shims use their default values (mostly enabled).">
+</SettingsExample>
 
 <p>
     For instance, <Link href="https://maxto.net/en/shim/winbox">MikroTik WinBox</Link> crashes when any program 

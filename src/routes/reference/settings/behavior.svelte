@@ -1,16 +1,32 @@
 <script>
-import { Keys, CommandExample } from '../../../components.js';
+import { Keys, CommandExample, SettingsExample } from '../../../components.js';
 </script>
 
 <svelte:head>
     <title>Window behavior settings &mdash; MaxTo reference manual</title>
 </svelte:head>
 
-<h1>The <b>window behavior</b> settings lets you control a few aspects of how windows behave.</h1>
+<h1>The <b>window behavior</b> settings lets you control how windows behave.</h1>
 
 <p>
     These settings control what happens when you drag and maximize windows.
 </p>
+
+<SettingsExample 
+    name="behavior"
+    alt="Behavior settings in the MaxTo user interface"
+    config={{ "behavior": {
+    "snap": {
+      "to": [
+        "Screen",
+        "Window"
+      ],
+      "distance": 10
+    },
+    "transparentWindowsWhenMoving": true,
+    "passiveMode": false
+  } }}>
+</SettingsExample>
 
 <h2>Window transparency</h2>
 
