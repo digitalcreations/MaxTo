@@ -1,5 +1,5 @@
 <script>
-import { Keys, CommandExample, Alert } from '../../../components.js';
+import { Keys, CommandExample, Alert, SettingsExample } from '../../../components.js';
 </script>
 
 <svelte:head>
@@ -12,6 +12,16 @@ import { Keys, CommandExample, Alert } from '../../../components.js';
     MaxTo will apply regions to a monitor. In this case, each monitor has an identifier, and these settings determine how
     that identifier is created.
 </p>
+
+<SettingsExample 
+    name="monitor"
+    alt="Monitor settings in the MaxTo user interface"
+    config={{     "monitor": {
+    "idSelection": "SerialNumber",
+    "virtualDesktop": true
+  } }}
+    explanation="This is the default configuration (as of version 2.1.0), which identifies monitors by their serial number and has new regions on each virtual desktop.">
+</SettingsExample>
 
 <Alert kind=warning>
     <h3>Where did my regions go?</h3>

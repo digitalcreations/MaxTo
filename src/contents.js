@@ -90,6 +90,10 @@ export default [
 						href: '/reference/settings/updates'
 					},
 					{
+						title: "Startup",
+						href: '/reference/settings/startup'
+					},
+					{
 						title: "Error reporting",
 						href: '/reference/settings/error_reporting'
 					},
