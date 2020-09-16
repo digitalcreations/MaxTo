@@ -13,7 +13,6 @@ section {
     box-shadow: var(--box-shadow);
     position: relative;
     margin-bottom: var(--padding-large);
-    overflow: hidden;
 }
 
 section.padding {
@@ -41,8 +40,8 @@ section.stacked:hover::after {
 
 .badge {
     position: absolute;
-    top: 20px;
-    right: -20px;
+    top: var(--padding-medium);
+    right: calc(-1 * var(--padding-small));
 }
 
 header { margin: 0; padding: var(--padding-medium); padding-bottom: 0; }

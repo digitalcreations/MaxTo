@@ -2,8 +2,8 @@
 import Icon from './Icon.svelte';
 import { afterUpdate, onMount } from 'svelte';
 
-export let top;
-export let height;
+let top;
+let height;
 $: bottom = top + height;
 export let headerSelector = "article > h2";
 let headers = [];

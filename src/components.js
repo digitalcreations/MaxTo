@@ -26,6 +26,7 @@ import Tabs from './components/Tabs.svelte';
 import Trigger from './components/Trigger.svelte';
 import ArticleSummary from './components/ArticleSummary.svelte';
 import SettingsExample from './components/SettingsExample.svelte';
+import TutorialNav from './components/TutorialNav.svelte';
 
 export { 
     Accordion,
@@ -55,5 +56,6 @@ export {
     Tab,
     TableOfContents,
     Tabs,
-    Trigger
+    Trigger,
+    TutorialNav
  };

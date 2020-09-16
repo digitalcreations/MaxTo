@@ -1,6 +1,11 @@
 <script>
+import { onMount } from 'svelte';
+
 import Card from './Card.svelte';
 import Icon from './Icon.svelte';
+
+import { stores } from '@sapper/app';
+const { page } = stores();
 
 export let title;
 export let icon;
@@ -45,6 +50,11 @@ li a {
     margin-bottom: var(--padding-small);
 }
 
+li a.active
+{
+    font-weight: 600;
+}
+
 li a:hover {
     border-bottom: 1px solid black;
 }
@@ -80,7 +90,7 @@ p a :global(figure path) {
         
         <ul>
         {#each articles as { href, title }}
-            <li><a {href}>{title}</a></li>
+            <li><a {href} class:active={href == $page.path}>{title}</a></li>
         {/each}
         </ul>
         

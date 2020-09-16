@@ -18,7 +18,8 @@
 <script>
 import { ArticleSummary, SplitView, TableOfContents, Badge, Breadcrumbs } from '../components.js';
 import contents from '../contents.js';
-	
+
+export let segment;
 export let commands;
 export let triggers;
 
@@ -116,6 +117,9 @@ reference.children.find(c => c.href == "/reference/commands").children = mapToTa
 }
 </style>
 
+{#if typeof segment == "object"}
+<slot></slot>
+{:else}
 <SplitView>
 	<a slot="header" class="logo" href="/">
 		<img src="logo.svg" alt="MaxTo logo" />
@@ -135,3 +139,4 @@ reference.children.find(c => c.href == "/reference/commands").children = mapToTa
 		</ArticleSummary>
 	</main>
 </SplitView>
+{/if}

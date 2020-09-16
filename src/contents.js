@@ -5,22 +5,31 @@ export default [
 		children: [
 			{
 				title: "What are regions?",
+				text: 'The basic building blocks of MaxTo.',
 				href: "/tutorial/regions",
 			},
 			{
 				title: "Keyboard shortcuts",
+				text: 'Learn how to use the default keyboard shortcuts',
+				icon: 'keyboard',
 				href: "/tutorial/keyboard",
 			},
 			{
 				title: "Recipes",
+				text: "Create your own recipes to automate your workflow",
+				icon: "code-branch",
 				href: "/tutorial/recipes"
 			},
 			{
 				title: "Command line",
+				icon: "terminal",
+				text: "Do anything with the command line",
 				href: "/tutorial/cli"
 			},
 			{
 				title: "Virtual desktops",
+				icon: "desktop",
+				text: "Use the virtual desktop feature most effectively",
 				href: "/tutorial/virtual_desktops"
 			}
 		]

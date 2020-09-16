@@ -2,7 +2,7 @@
 import { onMount } from 'svelte';
 
 export let name;
-export let set;
+export let set = "regular";
 export let size = 'normal';
 export let inline = false;
 
