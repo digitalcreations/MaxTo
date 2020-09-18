@@ -115,6 +115,62 @@ reference.children.find(c => c.href == "/reference/commands").children = mapToTa
 		background: transparent;
 	}
 }
+
+footer {
+	background: #262f36;
+	display: flex;
+	padding: 100px calc(3* var(--padding-large));
+}
+
+footer section:first-child {
+	flex: 3;
+}
+
+footer section { flex: 1; }
+
+footer h1, footer a {
+	color: white;
+}
+
+footer a {
+	text-decoration: none;
+	font-weight: 300;
+}
+
+footer a:hover {
+	text-decoration: underline;
+}
+
+footer h1 {
+	font-size: var(--font-size-small);
+	font-weight: 600;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+}
+
+footer p {
+	color: rgba(255, 255, 255, 0.7);
+	font-weight: 300;
+	font-size: 15px;
+	margin-top: 0;
+}
+
+footer img {
+	width: 48px;
+	height: 48px;
+}
+
+footer ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+footer li {
+	margin: 0;
+	font-size: 15px;
+}
 </style>
 
 {#if typeof segment == "object"}
@@ -139,4 +195,38 @@ reference.children.find(c => c.href == "/reference/commands").children = mapToTa
 		</ArticleSummary>
 	</main>
 </SplitView>
+
+<footer>
+	<section>
+		<h1>About</h1>
+		<p>Made by humans in Norway.</p>
+		<a href="https://www.digitalcreations.no" title="Digital Creations AS"><img src="/dc.svg" alt="Digital Creations logo" /></a>
+	</section>
+	
+	<section>
+		<h1>Product</h1>
+		<ul>
+			<li><a href="https://maxto.net/testimonials">Testimonials</a></li>
+		</ul>
+	</section>
+	
+	<section>
+		<h1>Docs</h1>
+		<ul>
+			{#each contents as page}
+			<li><a href={page.href}>{page.title}</a></li>
+			{/each}
+		</ul>
+	</section>
+	
+	<section>
+		<h1>Legal</h1>
+		<ul>
+			<li><a href="https://maxto.net/terms/purchase">Purchase terms</a></li>
+			<li><a href="https://maxto.net/terms/privacy">Privacy</a></li>
+			<li><a href="https://maxto.net/terms/license">License</a></li>
+			<li><a href="https://maxto.net/resellers">For resellers</a></li>
+		</ul>
+	</section>
+</footer>
 {/if}
