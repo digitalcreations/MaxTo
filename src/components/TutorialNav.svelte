@@ -51,6 +51,8 @@
 </style>
 
 {#if !!next}
+<h2>What's next</h2>
+
 <nav>
     <article>
         <Card type="stacked">

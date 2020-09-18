@@ -1,5 +1,5 @@
 <script>
-import { Keys, AnnotatedImage, Annotation, Alert, Link } from '../../components.js';
+import { Keys, AnnotatedImage, Annotation, Alert, Link, SectionCard, SectionList } from '../../components.js';
 </script>
 
 <style>
@@ -24,7 +24,7 @@ table:not(.bordered) td:first-child {
 
 <p>
     It is helpful to know how virtual desktops work in Windows before adding a tool such as MaxTo. If you press <Keys combination="Windows+Tab" />, Windows
-    will display the new, virtual-desktop Task View, which is meant as a sort of replacement for <Keys combination="Alt+Tab" />. The new task switcher
+    will display the new, virtual desktop-aware Task View, which is meant as a sort of replacement for <Keys combination="Alt+Tab" />. The new task switcher
     stays on the screen after you release the Windows key, and allows you to select a window to switch to.
 </p>
 
@@ -130,3 +130,14 @@ table:not(.bordered) td:first-child {
     You can also work with virtual desktops in your recipes. Many commands support choosing virtual desktops, so you can place
     windows quickly. See <Link href="/reference/commands/window/move">the move window command</Link> for an example.
 </p>
+
+<h2>What's next</h2>
+
+<p>
+    You've reached the end of the tutorial. Maybe you can find something else of interest in these sections:
+</p>
+
+<SectionList>
+    <SectionCard href="/how-to" title="How-tos" text="Guides that show you examples you can use." icon="map-signs" />
+    <SectionCard href="/reference" title="Reference" text="Goes into detail on the moving parts of MaxTo." icon="book" />
+</SectionList>

@@ -27,8 +27,8 @@ import { Code, Badge, Link, Alert, LinkList, LinkListItem, AnnotatedImage, Annot
 
 <p>
     One of the cool things when using MaxTo's CLI, all the ingredients that are available
-    in recipes, are also available here. Also, there are some commands that are only 
-    available from the command line; typically commands that only queries for values.
+    in recipes, are also available on the command line. Also, there are some commands that are only 
+    available from the command line; typically commands that only query for values.
 </p>
 
 <p>

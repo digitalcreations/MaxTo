@@ -4,6 +4,4 @@
 
 <slot />
 
-<h2>What's next</h2>
-
 <TutorialNav></TutorialNav>
