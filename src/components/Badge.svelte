@@ -13,6 +13,7 @@ span {
     font-size: .75rem;
     color: white;
     font-weight: 600;
+    line-height: 1rem;
 }
 
 span.primary { background-color: var(--color-primary); }
