@@ -2,6 +2,9 @@
 import Icon from './Icon.svelte';
 import { slide } from 'svelte/transition';
 
+import { stores } from '@sapper/app';
+const { page } = stores();
+
 export let contents;
 export let level = 1;
 let open = false;
@@ -13,11 +16,11 @@ function update() {
 }
 
 function isOpen(href) {
-    return typeof window !== 'undefined' && window.location.pathname.startsWith(href);
+    return $page.path.startsWith(href);
 }
 
 function isActive(href) {
-    return typeof window !== 'undefined' && window.location.pathname == href;
+    return $page.path == href;
 }
 </script>
 

@@ -2,17 +2,16 @@
 import { onMount } from 'svelte';
 import Icon from './Icon.svelte';
 
+import { stores } from '@sapper/app';
+const { page } = stores();
+
 export let contents = [];
 
 let crumbs = [];
-onMount(update);
 
-function update() {
-    crumbs = createCrumbs();
-}
+$: crumbs = createCrumbs($page.path);
 
-
-function createCrumbs() {
+function createCrumbs(path) {
     if (contents.length === 0) {
         return;
     }
@@ -25,7 +24,7 @@ function createCrumbs() {
     let c = contents;
     let next = null;
     do {
-        next = c.find(i => window.location.pathname.startsWith(i.href));
+        next = c.find(i => path.startsWith(i.href));
         if (next != null) {
             crumbs = [...crumbs, { title: next.title, href: next.href }];
             c = next.children;
@@ -35,11 +34,7 @@ function createCrumbs() {
 
     return crumbs;
 }
-
-onMount(() => createCrumbs());
 </script>
-
-<svelte:window on:pushstate={update} on:popstate={update} />
 
 <style>
 section
