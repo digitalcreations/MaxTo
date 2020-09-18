@@ -21,59 +21,43 @@ $: parts = combination
 
 <style>
 section {
-	transition: all 0.25s ease-out;
-	text-decoration: none;
-    display: inline-flex;
-	padding: 0 0.5rem 0 0;
-	box-shadow: var(--box-shadow);
-	border-radius: var(--border-radius);
-	border: 1px solid var(--color-box-border);
-    background: white;
-    color: var(--color-dark);
-    break-inside: avoid;
-}
-
-section > span :global(figure) {
-	transition: all 0.25s ease-out;
-    display: inline-block;
-    vertical-align: baseline;
-    background: var(--color-background);
-    border-right: 1px solid var(--color-box-border);
-    padding: 0 0.5rem 0 0.5rem;
-    margin-right: 0.5rem;
+    display: inline;
 }
 
 kbd {
     display: inline-block;
     font-family: var(--font-family);
+    background: var(--color-default);
+    border-radius: 2px;
+    padding: 4px;
+    font-size: var(--font-size-small);
 }
 
-kbd + kbd:before {
-    content: "+";
+span :global(figure) {
     display: inline-block;
-    margin: 0 0.25rem;
-    font-family: var(--font-family);
 }
 
-kbd span {
+span:after {
+    content: '+';
     display: inline-block;
-    vertical-align: baseline;
+    margin: 0 4px 0 0;
 }
+span:last-child::after {
+    content: '';
+}
+
 </style>
 
 <section>
-<span>
-<Icon set="light" name="keyboard" />
-</span>
 {#each parts as { title, icon }}
+<span>
 <kbd>
 {#if icon != null}
-<span>
 <Icon set={icon[0]} name={icon[1]} />
-</span>
 {:else}
 {title}
 {/if}
 </kbd>
+</span>
 {/each}
 </section>
