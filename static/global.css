@@ -75,9 +75,6 @@ h2 {
 	font-weight: 400;
 	color: #000;
 	position: relative;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
 	font-size: 1.5rem;
 	line-height: 3.75rem;
 	flex: 0;
