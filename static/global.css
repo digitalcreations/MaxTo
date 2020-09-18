@@ -149,7 +149,7 @@ figure {
 	margin-bottom: calc(15px + var(--padding-medium));
 }
 
-figure img {
+figure img, figure video {
 	border-radius: var(--border-radius);
 	width: 100%;
 }

@@ -53,7 +53,7 @@ section.danger {
 }
 
 
-section > :global(figure) {
+.icon :global(figure) {
     position: absolute;
     top: -2rem;
     left: -2rem;
@@ -62,7 +62,7 @@ section > :global(figure) {
 </style>
 
 <section class="alert" class:warning={kind == 'warning'} class:info={kind == 'info'} class:danger={kind == 'danger'} class:success={kind == 'success'}>
-    <Icon set="regular" name={selectedIcon} size="giant" />
+    <div class="icon"><Icon set="regular" name={selectedIcon} size="giant" /></div>
 
     <slot></slot>
 </section>

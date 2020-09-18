@@ -5,31 +5,44 @@ export default [
 		children: [
 			{
 				title: "What are regions?",
+				icon: "rectangle-wide",
 				text: 'The basic building blocks of MaxTo.',
 				href: "/tutorial/regions",
 			},
 			{
 				title: "Keyboard shortcuts",
-				text: 'Learn how to use the default keyboard shortcuts',
+				text: 'Learn how to use the default keyboard shortcuts.',
 				icon: 'keyboard',
 				href: "/tutorial/keyboard",
 			},
 			{
+				title: "Snapping",
+				text: "Windows become slightly magnetic when you use MaxTo.",
+				icon: "magnet",
+				href: "/tutorial/snap"
+			},
+			{
+				title: "Expanding windows",
+				text: 'Like snapping, just with the keyboard.',
+				icon: 'arrows-h',
+				href: "/tutorial/expand",
+			},
+			{
 				title: "Recipes",
-				text: "Create your own recipes to automate your workflow",
+				text: "Create your own recipes to automate your workflow.",
 				icon: "code-branch",
 				href: "/tutorial/recipes"
 			},
 			{
 				title: "Command line",
 				icon: "terminal",
-				text: "Do anything with the command line",
+				text: "Do anything with the command line.",
 				href: "/tutorial/cli"
 			},
 			{
 				title: "Virtual desktops",
 				icon: "desktop",
-				text: "Use the virtual desktop feature most effectively",
+				text: "Use the virtual desktop feature most effectively.",
 				href: "/tutorial/virtual_desktops"
 			}
 		]

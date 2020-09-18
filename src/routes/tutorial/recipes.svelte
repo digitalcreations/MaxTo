@@ -61,7 +61,7 @@ import contents from '../../contents.js';
     </LinkListItem>
 </LinkList>
 
-<p>You can find a complete list of <Link href="/reference/commands">the supported commands in the reference manual</Link>.</p>
+<p>You can find a complete list of <Link href="/reference/commands">supported commands</Link> in the reference manual.</p>
 
 <h2>Creating your first recipe</h2>
 
@@ -100,7 +100,7 @@ import contents from '../../contents.js';
             src="/tutorial/recipes/settings_opened.png" 
             alt="MaxTo's settings window showing the Recipes tab."
             caption="MaxTo's settings window.">
-            <Annotation active x="60%" y="45%"  text="Click the <b>New recipe</b> button" />
+            <Annotation active x="60%" y="40%"  text="Click the <b>New recipe</b> button" />
         </AnnotatedImage>
     </li>
     

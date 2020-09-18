@@ -12,7 +12,7 @@ import { Alert, Link } from '../../components.js';
 </p>
 <p>
   You can imagine MaxTo dividing your monitor into smaller monitors, and whenever you maximize
-  windows, the window will stay within one of the smaller monitors. If you use the mouse and
+  windows, the window will stay within one of the smaller regions. If you use the mouse and
   click the maximize button, the window will go into the region the mouse points to.
 </p>
 <Alert type=default>
@@ -32,12 +32,12 @@ import { Alert, Link } from '../../components.js';
   call these your active regions. You can either set them up manually; or you can use a preset.
 </p>
 <figure>
-  <img src="https://placekitten.com/640/480" alt="The change regions window of MaxTo">
+  <img src="/tutorial/regions/change.png" alt="The change regions window of MaxTo">
   <figcaption>Using the change regions window, you can set your regions up.</figcaption>
 </figure>
 <p>
   To find the change regions window, double-click on the MaxTo icon in the notification area.
-  The change regions window should show up, on all of your monitors.
+  The change regions window should show up, one on each of your monitors.
 </p>
 <Alert type=info>
   <h2>Can't find the MaxTo icon?</h2>
@@ -47,6 +47,15 @@ import { Alert, Link } from '../../components.js';
     small up arrow on the left of the notification area, find the MaxTo icon there, and drag
     it out of the box and onto the notification area. Problem solved.
   </p>
+  
+  <figure>
+    <video controls autoplay loop>
+        <source src="/tutorial/regions/systray.mp4" type="video/mp4" />
+        <source src="/tutorial/regions/systray.webm" type="video/webm" />
+    </video>
+
+    <figcaption>Finding the MaxTo icon.</figcaption>
+</figure>
 </Alert>
 <p>
   You set up your regions by starting with a blank screen (the monitor is effectively one large region), 
@@ -66,7 +75,7 @@ import { Alert, Link } from '../../components.js';
   to load it. Then click Load Preset, and a window will pop up with the default presets.
 </p>
 <figure>
-  <img src="https://placekitten.com/640/480" alt="The load presets dialog">
+  <img src="/tutorial/regions/preset.png" alt="The load presets dialog">
   <figcaption>The load presets dialog has a default set of regions that you can load.</figcaption>
 </figure>
 <Alert type=info>
