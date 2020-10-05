@@ -4,7 +4,8 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "sapper dev",
-    "build": "sapper build --legacy",
+    "build": "sapper export --legacy",
+    "build-proper": "sapper build --legacy",
     "export": "sapper export --legacy",
     "start": "node __sapper__/build",
     "cy:run": "cypress run",
