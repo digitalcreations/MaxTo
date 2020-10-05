@@ -1,5 +1,6 @@
 <script>
   import { Alert, ArticleCard, Card, SectionList, SectionCard, Badge, Accordion, AccordionItem, Carousel, Link, Tabs, Tab, Keys } from "../components.js";
+  import { mdiMap, mdiFrequentlyAskedQuestions, mdiNotebook } from '@mdi/js';
   
   import contents from '../contents.js';
 </script>
@@ -13,7 +14,7 @@
 <p>We've divided MaxTo's documentation into 3 separate sections, which you can navigate to quickly below.</p>
 
 <section>
-  <ArticleCard href="/tutorial" title="Tutorial" icon="map" articles={contents[0].children} color="success" />
-  <ArticleCard href="/how-to" title="How do I...?" icon="frequently-asked-questions" articles={contents[1].children} color="primary" />
-  <ArticleCard href="/reference" title="Reference manual" icon="notebook" articles={contents[2].children} color="danger" />
+  <ArticleCard href="/tutorial" title="Tutorial" icon={mdiMap} articles={contents[0].children} color="success" />
+  <ArticleCard href="/how-to" title="How do I...?" icon={mdiFrequentlyAskedQuestions} articles={contents[1].children} color="primary" />
+  <ArticleCard href="/reference" title="Reference manual" icon={mdiNotebook} articles={contents[2].children} color="danger" />
 </section>

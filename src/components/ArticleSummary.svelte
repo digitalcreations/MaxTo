@@ -1,5 +1,6 @@
 <script>
-import Icon from './Icon.svelte';
+import Icon from 'mdi-svelte';
+import { mdiArrowCollapseUp } from '@mdi/js';
 import { afterUpdate, onMount } from 'svelte';
 
 let top;
@@ -165,7 +166,7 @@ a.active :global(figure svg path) {
                     {#if i > 0}
                     {getText(header)}
                     {:else}
-                    <Icon name="arrow-collapse-up" /> Return to top
+                    <Icon path={mdiArrowCollapseUp} /> Return to top
                     {/if}
                 </a>
             </li>

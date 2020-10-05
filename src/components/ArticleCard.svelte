@@ -2,7 +2,8 @@
 import { onMount } from 'svelte';
 
 import Card from './Card.svelte';
-import Icon from './Icon.svelte';
+import Icon from 'mdi-svelte';
+import { mdiArrowRight } from '@mdi/js';
 
 import { stores } from '@sapper/app';
 const { page } = stores();
@@ -65,26 +66,26 @@ p a {
     text-decoration: none;
 }
 
-p a :global(figure) {
+p a :global(svg) {
     transition: transform 0.25s ease-out;
 }
 
-p a:hover :global(figure)
+p a:hover :global(svg)
 {
     transform: translateX(0.5rem);
 }
 
-p a :global(figure) {
+p a :global(svg) {
     display: inline-block;
 }
-p a :global(figure path) {
+p a :global(svg path) {
     fill: var(--color);
 }
 </style>
 
 <Card type=stacked padding={false}>
     <nav style="--color: var(--color-{color})">
-        <Icon name={icon} size=giant />
+        <Icon path={icon} size=4 color="var(--color)" />
     
         <h2>{title}</h2>
         
@@ -95,7 +96,7 @@ p a :global(figure path) {
         </ul>
         
         <p>
-            <a {href}>Read more <Icon name="arrow-right" set="light" /></a>
+            <a {href}>Read more <Icon path={mdiArrowRight} /></a>
         </p>
     </nav>
 </Card>

@@ -1,6 +1,7 @@
 <script>
 import { onMount } from 'svelte';
-import Icon from './Icon.svelte';
+import Icon from 'mdi-svelte';
+import { mdiArrowLeft } from '@mdi/js';
 
 import { stores } from '@sapper/app';
 const { page } = stores();
@@ -96,7 +97,7 @@ a.back:hover {
 
 <section>
     <a href="/" class="back">
-        <Icon set="light" name="arrow-left" />
+        <Icon path={mdiArrowLeft} />
     </a>
 
     <ul>

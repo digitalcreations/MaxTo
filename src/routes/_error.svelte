@@ -1,5 +1,6 @@
 <script>
-	import { Icon } from '../components.js';
+	import Icon from 'mdi-svelte';
+	import { mdiArrowRight } from '@mdi/js';
 
 	export let status;
 	export let error;
@@ -75,7 +76,7 @@ a.next :global(figure path) {
 	<div>
 		<h2>{error.message}</h2>
 		<p>Please let us know that this page is missing by <a href="https://github.com/digitalcreations/MaxTo">filing an issue on our issue tracker</a>.</p>
-		<p><a class="next" href="/">Homepage <Icon name="arrow-right" /></a></p>
+		<p><a class="next" href="/">Homepage <Icon path={mdiArrowRight} /></a></p>
 	</div>
 </article>
 

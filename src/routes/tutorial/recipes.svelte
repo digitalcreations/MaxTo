@@ -1,5 +1,7 @@
 <script>
-import { Badge, Keys, Link, Alert, LinkList, LinkListItem, AnnotatedImage, Annotation, Icon, ArticleCard } from '../../components.js';
+import Icon from 'mdi-svelte';
+
+import { Badge, Keys, Link, Alert, LinkList, LinkListItem, AnnotatedImage, Annotation, ArticleCard } from '../../components.js';
 import contents from '../../contents.js';
 </script>
 
@@ -129,7 +131,7 @@ import contents from '../../contents.js';
     </li>
     
     <li>
-        <p>Click the <Icon inline name="microsoft-windows" /> and <b>Control</b> toggle buttons (so they turn blue). Then click the dropdown, and hit the <Keys combination="Z"/> key on your keyboard. You can also select the Z from the dropdown list.</p>
+        <p>Click the <Icon path="microsoft-windows" /> and <b>Control</b> toggle buttons (so they turn blue). Then click the dropdown, and hit the <Keys combination="Z"/> key on your keyboard. You can also select the Z from the dropdown list.</p>
         <p>Afterwards, click <b>Add ingredient</b>.</p>
         
         <AnnotatedImage 

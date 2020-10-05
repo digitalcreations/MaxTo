@@ -1,5 +1,5 @@
 <script>
-import Icon from './Icon.svelte';
+import Icon from 'mdi-svelte';
 
 export let icon = "console";
 </script>
@@ -37,6 +37,6 @@ code {
 </style>
 
 <span class="code">
-    <Icon name={icon} />
+    <Icon path={icon} />
     <code><slot></slot></code>
 </span>

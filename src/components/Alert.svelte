@@ -1,14 +1,15 @@
 <script>
-import Icon from './Icon.svelte';
+import Icon from 'mdi-svelte';
+import { mdiInformationOutline, mdiAlertCircleOutline, mdiCheckCircleOutline, mdiAlert } from '@mdi/js';
 
 export let icon = null;
 export let kind = 'default';
 
 const iconMap = {
-    info: 'information-outline',
-    warning: 'alert-circle-outline',
-    success: 'check-circle-outline',
-    danger: 'alert'
+    info: mdiInformationOutline,
+    warning: mdiAlertCircleOutline,
+    success: mdiCheckCircleOutline,
+    danger: mdiAlert
 };
 
 $: selectedIcon = icon || iconMap[kind];
@@ -54,16 +55,15 @@ section.danger {
 }
 
 
-.icon :global(figure) {
+.icon :global(svg) {
     position: absolute;
     top: -2rem;
     left: -2rem;
-    opacity: 0.05;
 }
 </style>
 
 <section class="alert" class:warning={kind == 'warning'} class:info={kind == 'info'} class:danger={kind == 'danger'} class:success={kind == 'success'}>
-    <div class="icon"><Icon name={selectedIcon} size="giant" /></div>
+    <div class="icon"><Icon path={selectedIcon} size="10rem" color="rgba(0,0,0,0.05)" /></div>
 
     <slot></slot>
 </section>

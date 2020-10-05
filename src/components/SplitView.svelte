@@ -1,7 +1,8 @@
 <script>
-import Icon from './Icon.svelte';
+import Icon from 'mdi-svelte';
+import { mdiMenu } from '@mdi/js';
 
-export let icon = "menu";
+export let icon = mdiMenu;
 export let open = false;
 </script>
 
@@ -78,7 +79,7 @@ section.open nav article {
         <header>
             <slot name="header"></slot>
             <button type="button" on:click={() => open = !open}>
-                <Icon name={icon} size="medium" />
+                <Icon path={icon} size="medium" />
             </button>
         </header>
 

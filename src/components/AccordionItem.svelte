@@ -1,7 +1,8 @@
 <script>
 import { onMount, getContext, createEventDispatcher } from 'svelte';
 import { slide } from 'svelte/transition';
-import Icon from './Icon.svelte';
+import Icon from 'mdi-svelte';
+import { mdiChevronDown } from '@mdi/js';
 import { ACCORDION } from './Accordion.svelte';
 
 export let title = "";
@@ -42,7 +43,7 @@ article > header h5
     transition: transform 0.25s ease-out;
 }
 
-:global(article.open > header figure) {
+:global(article.open > header svg) {
     transform: rotate(180deg);
     transform-origin: center center;
 }
@@ -61,7 +62,7 @@ article + :global(article) {
         <h5><slot name="title">{title}</slot></h5>
 
         {#if collapsible}
-        <Icon name="chevron-down" />
+        <Icon path={mdiChevronDown} />
         {/if}
     </header>
 

@@ -1,5 +1,5 @@
 <script>
-import Icon from './Icon.svelte';
+import Icon from 'mdi-svelte';
 import Card from './Card.svelte';
 
 export let icon;
@@ -53,7 +53,7 @@ export let href;
     <Card>
         <span slot="badge"><slot name="badge"/></span>
         <figure>
-            <Icon name={icon} size=huge  />
+            <Icon path={icon} size=4  />
         </figure>
 
         <h1>{title}</h1>

@@ -1,5 +1,6 @@
 <script>
 import { Keys, AnnotatedImage, Annotation, Alert, Link, SectionCard, SectionList } from '../../components.js';
+import { mdiFrequentlyAskedQuestions, mdiNotebook } from '@mdi/js';
 </script>
 
 <style>
@@ -138,6 +139,6 @@ table:not(.bordered) td:first-child {
 </p>
 
 <SectionList>
-    <SectionCard href="/how-to" title="How-tos" text="Guides that show you examples you can use." icon="frequently-asked-questions" />
-    <SectionCard href="/reference" title="Reference" text="Goes into detail on the moving parts of MaxTo." icon="notebook" />
+    <SectionCard href="/how-to" title="How-tos" text="Guides that show you examples you can use." icon={mdiFrequentlyAskedQuestions} />
+    <SectionCard href="/reference" title="Reference" text="Goes into detail on the moving parts of MaxTo." icon={mdiNotebook} />
 </SectionList>

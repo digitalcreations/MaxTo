@@ -11,7 +11,6 @@ import Carousel from './components/Carousel.svelte';
 import Code from './components/Code.svelte';
 import Command from './components/Command.svelte';
 import CommandExample from './components/CommandExample.svelte';
-import Icon from './components/Icon.svelte';
 import Keys from './components/Keys.svelte';
 import Link from './components/Link.svelte';
 import LinkList from './components/LinkList.svelte';
@@ -43,7 +42,6 @@ export {
     Code,
     Command,
     CommandExample,
-    Icon,
     Keys,
     Link,
     LinkList,

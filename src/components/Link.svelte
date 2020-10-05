@@ -1,5 +1,6 @@
 <script>
-import Icon from './Icon.svelte';
+import Icon from 'mdi-svelte';
+import { mdiLink, mdiEmail, mdiNotebook } from '@mdi/js';
 
 export let href;
 export let icon = null;
@@ -7,10 +8,10 @@ export let icon = null;
 $: displayedIcon = icon != null
     ? icon
     : href.startsWith('http') 
-    ? "link" 
+    ? mdiLink
     : href.startsWith('mailto')
-    ? 'email'
-    : "notebook";
+    ? mdiEmail
+    : mdiNotebook;
 </script>
 
 <style>
@@ -26,7 +27,7 @@ a {
     color: var(--color-dark);
 }
 
-a :global(figure) {
+a span {
 	transition: all 0.25s ease-out;
     display: inline-block;
     vertical-align: bottom;
@@ -41,19 +42,23 @@ a:hover {
     border-color: hsl(var(--color-primary-hue), var(--color-primary-sat), calc(0.9 * var(--color-primary-lit)));
 }
 
-a:hover :global(figure) {
+a:hover span {
     background: var(--color-primary);
     filter: brightness(90%);
     border-color: hsl(var(--color-primary-hue), var(--color-primary-sat), calc(0.9 * var(--color-primary-lit)));
     color: white;
 }
 
-a:hover :global(figure svg path) {
+a :global(svg path) {
+    transition: fill 0.25s ease-in-out;
+}
+
+a:hover :global(svg path) {
     fill: white;
 }
 </style>
 
 <a {href} rel=prefetch>
     {#if displayedIcon}
-    <Icon name={displayedIcon} />
+    <span><Icon path={displayedIcon} size="0.875rem" /></span>
     {/if} <slot/></a>

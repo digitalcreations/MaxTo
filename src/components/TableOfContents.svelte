@@ -1,5 +1,6 @@
 <script>
-import Icon from './Icon.svelte';
+import Icon from 'mdi-svelte';
+import { mdiChevronDown } from '@mdi/js';
 import { slide } from 'svelte/transition';
 
 import { stores } from '@sapper/app';
@@ -96,7 +97,7 @@ button  {
                 <span>{title}</span>
 
                 {#if !!children && children.length > 0}
-                <button><Icon name="chevron-down" /></button>
+                <button><Icon path={mdiChevronDown} /></button>
                 {/if}
             </a>
 

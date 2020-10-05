@@ -1,6 +1,7 @@
 <script>
 import Carousel from '@beyonk/svelte-carousel';
-import Icon from './Icon.svelte';
+import Icon from 'mdi-svelte';
+import { mdiChevronRight, mdiChevronLeft } from '@mdi/js';
 </script>
 
 <style>
@@ -32,12 +33,12 @@ import Icon from './Icon.svelte';
 
 <Carousel perPage=1 loop=false>
     <span class="control" slot="left-control">
-        <Icon name="chevron-left" />
+        <Icon path={mdiChevronLeft} />
     </span>
 
     <slot />
 
     <span class="control" slot="right-control">
-        <Icon name="chevron-right" />
+        <Icon path={mdiChevronRight} />
     </span>
 </Carousel>

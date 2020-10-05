@@ -1,14 +1,15 @@
 <script>
-import Icon from './Icon.svelte';
+import Icon from 'mdi-svelte';
+import { mdiMicrosoftWindows, mdiArrowLeft, mdiArrowRight, mdiArrowUp, mdiArrowDown } from '@mdi/js';
 
 export let combination;
 
 const map = {
-    windows: "microsoft-windows",
-    left: "arrow-left",
-    right: "arrow-right",
-    up: "arrow-up",
-    down: "arrow-down"
+    windows: mdiMicrosoftWindows,
+    left: mdiArrowLeft,
+    right: mdiArrowRight,
+    up: mdiArrowUp,
+    down: mdiArrowDown
 };
 
 $: parts = combination
@@ -53,7 +54,7 @@ span:last-child::after {
 <span>
 <kbd>
 {#if icon != null}
-<Icon name={icon} />
+<Icon path={icon} />
 {:else}
 {title}
 {/if}

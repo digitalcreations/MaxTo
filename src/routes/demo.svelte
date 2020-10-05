@@ -1,5 +1,6 @@
 <script>
   import { ArticleCard, Alert, Card, Badge, Accordion, AccordionItem, Carousel, Link, Tabs, Tab, Keys } from "../components.js";
+  import { mdiAlertMinus } from '@mdi/js';
   
 const articles = [
 	{ title: "Adding DNS records and templates", href: "/dns" },
@@ -38,7 +39,7 @@ const articles = [
     </div>
   </Card>
   
-  <ArticleCard title="Hosting" icon="link" {articles}></ArticleCard>
+  <ArticleCard title="Hosting" icon={mdiAlertMinus} {articles}></ArticleCard>
   
   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum minus quaerat adipisci quidem quam non nisi quas numquam sint, cupiditate perspiciatis eius maxime reprehenderit optio voluptas inventore, aliquam et necessitatibus.</p>
   

@@ -1,7 +1,8 @@
 <script>
     import ArticleCard from './ArticleCard.svelte';
     import Card from './Card.svelte';
-    import Icon from './Icon.svelte';
+    import Icon from 'mdi-svelte';
+    import { mdiMap } from '@mdi/js';
     import Badge from './Badge.svelte';
     import MoreLink from './MoreLink.svelte';
 
@@ -59,7 +60,7 @@
             <div slot="badge"><Badge text="Up next" color="primary" /></div>
             <stack>
                 <figure>
-                    <Icon name={next.icon} size=large />
+                    <Icon path={next.icon} size=2 />
                 </figure>
                 
                 <h2>{next.title}</h2>
@@ -72,7 +73,7 @@
     </article>
     
     <aside>
-        <ArticleCard href="/tutorial" title="Tutorial" icon="map" articles={contents[0].children} color="success" />
+        <ArticleCard href="/tutorial" title="Tutorial" icon={mdiMap} articles={contents[0].children} color="success" />
     </aside>
 </nav>
 {/if}

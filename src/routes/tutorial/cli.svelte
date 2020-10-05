@@ -1,5 +1,5 @@
 <script>
-import { Code, Badge, Link, Alert, LinkList, LinkListItem, AnnotatedImage, Annotation, Accordion, AccordionItem, Icon, ArticleCard, CommandExample } from '../../components.js';
+import { Code, Badge, Link, Alert, LinkList, LinkListItem, AnnotatedImage, Annotation, Accordion, AccordionItem, ArticleCard, CommandExample } from '../../components.js';
 </script>
 
 <svelte:head>

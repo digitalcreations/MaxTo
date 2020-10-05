@@ -1,5 +1,5 @@
 <script>
-import { Badge, Keys, Link, Alert, LinkList, LinkListItem, AnnotatedImage, Annotation, Icon, ArticleCard } from '../../components.js';
+import { Badge, Keys, Link, Alert, LinkList, LinkListItem, AnnotatedImage, Annotation, ArticleCard } from '../../components.js';
 import contents from '../../contents.js';
 </script>
 

@@ -1,3 +1,5 @@
+import { mdiGrid, mdiKeyboard, mdiMagnet, mdiArrowCollapseHorizontal, mdiConsole, mdiDesktopMacDashboard, mdiSourceBranch } from '@mdi/js';
+
 export default [
 	{
 		title: "Tutorial",
@@ -5,43 +7,43 @@ export default [
 		children: [
 			{
 				title: "What are regions?",
-				icon: "grid",
+				icon: mdiGrid,
 				text: 'The basic building blocks of MaxTo.',
 				href: "/tutorial/regions",
 			},
 			{
 				title: "Keyboard shortcuts",
 				text: 'Learn how to use the default keyboard shortcuts.',
-				icon: 'keyboard',
+				icon: mdiKeyboard,
 				href: "/tutorial/keyboard",
 			},
 			{
 				title: "Snapping",
 				text: "Windows become slightly magnetic when you use MaxTo.",
-				icon: "magnet",
+				icon: mdiMagnet,
 				href: "/tutorial/snap"
 			},
 			{
 				title: "Expanding windows",
 				text: 'Like snapping, just with the keyboard.',
-				icon: 'arrow-collapse-horizontal',
+				icon: mdiArrowCollapseHorizontal,
 				href: "/tutorial/expand",
 			},
 			{
 				title: "Recipes",
 				text: "Create your own recipes to automate your workflow.",
-				icon: "source-branch",
+				icon: mdiSourceBranch,
 				href: "/tutorial/recipes"
 			},
 			{
 				title: "Command line",
-				icon: "console",
+				icon: mdiConsole,
 				text: "Do anything with the command line.",
 				href: "/tutorial/cli"
 			},
 			{
 				title: "Virtual desktops",
-				icon: "desktop-mac-dashboard",
+				icon: mdiDesktopMacDashboard,
 				text: "Use the virtual desktop feature most effectively.",
 				href: "/tutorial/virtual_desktops"
 			}

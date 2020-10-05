@@ -5,7 +5,7 @@
 <script>
 	import { setContext, onDestroy } from 'svelte';
     import { writable } from 'svelte/store';
-    import Icon from './Icon.svelte';
+    import Icon from 'mdi-svelte';
 
     export let style = "tabs";
 
@@ -114,7 +114,7 @@ nav.pills button.selected {
         {#each tabs as tab}
         <li>
             <button class:selected="{$selectedTab === tab}" on:click="{() => selectTab(tab)}">
-                {#if !!tab.icon}<Icon name={tab.icon}></Icon>{/if}
+                {#if !!tab.icon}<Icon path={tab.icon}></Icon>{/if}
                 {tab.title}
             </button>
         </li>
