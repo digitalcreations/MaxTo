@@ -7,10 +7,10 @@ export let icon = null;
 $: displayedIcon = icon != null
     ? icon
     : href.startsWith('http') 
-    ? "external-link" 
+    ? "link" 
     : href.startsWith('mailto')
-    ? 'envelope'
-    : "book";
+    ? 'email'
+    : "notebook";
 </script>
 
 <style>
@@ -55,5 +55,5 @@ a:hover :global(figure svg path) {
 
 <a {href} rel=prefetch>
     {#if displayedIcon}
-    <Icon set="light" name={displayedIcon} />
+    <Icon name={displayedIcon} />
     {/if} <slot/></a>

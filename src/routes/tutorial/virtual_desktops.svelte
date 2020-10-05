@@ -138,6 +138,6 @@ table:not(.bordered) td:first-child {
 </p>
 
 <SectionList>
-    <SectionCard href="/how-to" title="How-tos" text="Guides that show you examples you can use." icon="map-signs" />
-    <SectionCard href="/reference" title="Reference" text="Goes into detail on the moving parts of MaxTo." icon="book" />
+    <SectionCard href="/how-to" title="How-tos" text="Guides that show you examples you can use." icon="frequently-asked-questions" />
+    <SectionCard href="/reference" title="Reference" text="Goes into detail on the moving parts of MaxTo." icon="notebook" />
 </SectionList>

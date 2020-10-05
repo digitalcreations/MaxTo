@@ -1,7 +1,7 @@
 <script>
 import Icon from './Icon.svelte';
 
-export let icon = "terminal";
+export let icon = "console";
 </script>
 
 <style>
@@ -37,6 +37,6 @@ code {
 </style>
 
 <span class="code">
-    <Icon set="light" name={icon} />
+    <Icon name={icon} />
     <code><slot></slot></code>
 </span>

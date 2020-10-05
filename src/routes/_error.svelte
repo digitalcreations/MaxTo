@@ -75,7 +75,7 @@ a.next :global(figure path) {
 	<div>
 		<h2>{error.message}</h2>
 		<p>Please let us know that this page is missing by <a href="https://github.com/digitalcreations/MaxTo">filing an issue on our issue tracker</a>.</p>
-		<p><a class="next" href="/">Homepage <Icon name="arrow-right" set="light" /></a></p>
+		<p><a class="next" href="/">Homepage <Icon name="arrow-right" /></a></p>
 	</div>
 </article>
 

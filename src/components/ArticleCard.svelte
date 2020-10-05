@@ -84,7 +84,7 @@ p a :global(figure path) {
 
 <Card type=stacked padding={false}>
     <nav style="--color: var(--color-{color})">
-        <Icon name={icon} set="light" size=giant />
+        <Icon name={icon} size=giant />
     
         <h2>{title}</h2>
         

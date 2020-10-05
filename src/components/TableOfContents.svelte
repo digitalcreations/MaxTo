@@ -96,7 +96,7 @@ button  {
                 <span>{title}</span>
 
                 {#if !!children && children.length > 0}
-                <button><Icon set="light" name="chevron-down" /></button>
+                <button><Icon name="chevron-down" /></button>
                 {/if}
             </a>
 

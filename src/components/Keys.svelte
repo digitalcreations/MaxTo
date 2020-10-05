@@ -4,11 +4,11 @@ import Icon from './Icon.svelte';
 export let combination;
 
 const map = {
-    windows: ["brands", "windows"],
-    left: ["regular", "arrow-left"],
-    right: ["regular", "arrow-right"],
-    up: ["regular", "arrow-up"],
-    down: ["regular", "arrow-down"]
+    windows: "microsoft-windows",
+    left: "arrow-left",
+    right: "arrow-right",
+    up: "arrow-up",
+    down: "arrow-down"
 };
 
 $: parts = combination
@@ -53,7 +53,7 @@ span:last-child::after {
 <span>
 <kbd>
 {#if icon != null}
-<Icon set={icon[0]} name={icon[1]} />
+<Icon name={icon} />
 {:else}
 {title}
 {/if}

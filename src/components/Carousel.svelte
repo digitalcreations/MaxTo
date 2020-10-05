@@ -32,12 +32,12 @@ import Icon from './Icon.svelte';
 
 <Carousel perPage=1 loop=false>
     <span class="control" slot="left-control">
-        <Icon set="light" name="chevron-left" />
+        <Icon name="chevron-left" />
     </span>
 
     <slot />
 
     <span class="control" slot="right-control">
-        <Icon set="regular" name="chevron-right" />
+        <Icon name="chevron-right" />
     </span>
 </Carousel>

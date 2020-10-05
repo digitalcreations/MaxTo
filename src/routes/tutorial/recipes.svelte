@@ -129,7 +129,7 @@ import contents from '../../contents.js';
     </li>
     
     <li>
-        <p>Click the <Icon inline set="brands" name="windows" /> and <b>Control</b> toggle buttons (so they turn blue). Then click the dropdown, and hit the <Keys combination="Z"/> key on your keyboard. You can also select the Z from the dropdown list.</p>
+        <p>Click the <Icon inline name="microsoft-windows" /> and <b>Control</b> toggle buttons (so they turn blue). Then click the dropdown, and hit the <Keys combination="Z"/> key on your keyboard. You can also select the Z from the dropdown list.</p>
         <p>Afterwards, click <b>Add ingredient</b>.</p>
         
         <AnnotatedImage 
@@ -211,6 +211,6 @@ import contents from '../../contents.js';
     all the available triggers and ingredients.
 </p>
 
-<ArticleCard href="/reference" title="Reference manual" icon="book" articles={contents[2].children} color="danger" />
+<ArticleCard href="/reference" title="Reference manual" icon="notebook" articles={contents[2].children} color="danger" />
 
 

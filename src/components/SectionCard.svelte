@@ -2,7 +2,6 @@
 import Icon from './Icon.svelte';
 import Card from './Card.svelte';
 
-export let iconSet = "light";
 export let icon;
 export let title;
 export let text;
@@ -54,7 +53,7 @@ export let href;
     <Card>
         <span slot="badge"><slot name="badge"/></span>
         <figure>
-            <Icon set={iconSet} name={icon} size=huge  />
+            <Icon name={icon} size=huge  />
         </figure>
 
         <h1>{title}</h1>

@@ -2,14 +2,13 @@
 import { onMount } from 'svelte';
 
 export let name;
-export let set = "regular";
 export let size = 'normal';
 export let inline = false;
 
 let svg = '';
 
 onMount(async() => {
-    const promise = await fetch(`icon/${set}/${name}.svg`);
+    const promise = await fetch(`icon/${name}.svg`);
     svg = await promise.text();
 })
 </script>

@@ -5,7 +5,7 @@ export default [
 		children: [
 			{
 				title: "What are regions?",
-				icon: "rectangle-wide",
+				icon: "grid",
 				text: 'The basic building blocks of MaxTo.',
 				href: "/tutorial/regions",
 			},
@@ -24,24 +24,24 @@ export default [
 			{
 				title: "Expanding windows",
 				text: 'Like snapping, just with the keyboard.',
-				icon: 'arrows-h',
+				icon: 'arrow-collapse-horizontal',
 				href: "/tutorial/expand",
 			},
 			{
 				title: "Recipes",
 				text: "Create your own recipes to automate your workflow.",
-				icon: "code-branch",
+				icon: "source-branch",
 				href: "/tutorial/recipes"
 			},
 			{
 				title: "Command line",
-				icon: "terminal",
+				icon: "console",
 				text: "Do anything with the command line.",
 				href: "/tutorial/cli"
 			},
 			{
 				title: "Virtual desktops",
-				icon: "desktop",
+				icon: "desktop-mac-dashboard",
 				text: "Use the virtual desktop feature most effectively.",
 				href: "/tutorial/virtual_desktops"
 			}

@@ -6,12 +6,11 @@ import { TABS } from './Tabs.svelte';
 
 export let title = null;
 export let icon = null;
-export let iconSet = 'light';
 
 const tab = {};
 const { registerTab, selectTab, selectedTab } = getContext(TABS);
 
-registerTab({ id: tab, title, icon, iconSet });
+registerTab({ id: tab, title, icon });
 </script>
 
 {#if $selectedTab.id === tab}

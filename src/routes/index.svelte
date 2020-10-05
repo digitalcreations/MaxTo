@@ -14,6 +14,6 @@
 
 <section>
   <ArticleCard href="/tutorial" title="Tutorial" icon="map" articles={contents[0].children} color="success" />
-  <ArticleCard href="/how-to" title="How do I...?" icon="map-signs" articles={contents[1].children} color="primary" />
-  <ArticleCard href="/reference" title="Reference manual" icon="book" articles={contents[2].children} color="danger" />
+  <ArticleCard href="/how-to" title="How do I...?" icon="frequently-asked-questions" articles={contents[1].children} color="primary" />
+  <ArticleCard href="/reference" title="Reference manual" icon="notebook" articles={contents[2].children} color="danger" />
 </section>

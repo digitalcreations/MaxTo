@@ -27,5 +27,5 @@ span {
 <a {href}>
     <span><slot></slot></span>
 
-    <Icon set="light" name="arrow-right" />
+    <Icon name="arrow-right" />
 </a>

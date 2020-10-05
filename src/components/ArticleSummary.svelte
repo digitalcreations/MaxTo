@@ -165,7 +165,7 @@ a.active :global(figure svg path) {
                     {#if i > 0}
                     {getText(header)}
                     {:else}
-                    <Icon set="light" name="arrow-to-top" /> Return to top
+                    <Icon name="arrow-collapse-up" /> Return to top
                     {/if}
                 </a>
             </li>

@@ -12,7 +12,6 @@
     "test": "run-p --race dev cy:run"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-pro": "^5.13.0",
     "compression": "^1.7.1",
     "dom-parser": "^0.1.6",
     "polka": "next",
@@ -25,6 +24,7 @@
     "@babel/preset-env": "^7.0.0",
     "@babel/runtime": "^7.0.0",
     "@beyonk/svelte-carousel": "^2.6.1",
+    "@mdi/svg": "^5.6.55",
     "@rollup/plugin-babel": "^5.0.0",
     "@rollup/plugin-commonjs": "^12.0.0",
     "@rollup/plugin-node-resolve": "^8.0.0",
@@ -33,8 +33,8 @@
     "rollup": "^2.3.4",
     "rollup-plugin-svelte": "^5.0.1",
     "rollup-plugin-terser": "^5.3.0",
-    "sapper": "^0.28.1",
-    "svelte": "^3.0.0",
+    "sapper": "^0.27.13",
+    "svelte": "^3.23.0",
     "vercel-sapper": "^0.41.0"
   }
 }

@@ -1,7 +1,7 @@
 <script>
 import Icon from './Icon.svelte';
 
-export let icon = ["light", "bars"];
+export let icon = "menu";
 export let open = false;
 </script>
 
@@ -78,7 +78,7 @@ section.open nav article {
         <header>
             <slot name="header"></slot>
             <button type="button" on:click={() => open = !open}>
-                <Icon set={icon[0]} name={icon[1]} size="medium" />
+                <Icon name={icon} size="medium" />
             </button>
         </header>
 

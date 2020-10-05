@@ -114,7 +114,7 @@ nav.pills button.selected {
         {#each tabs as tab}
         <li>
             <button class:selected="{$selectedTab === tab}" on:click="{() => selectTab(tab)}">
-                {#if !!tab.icon}<Icon set={tab.iconSet} name={tab.icon}></Icon>{/if}
+                {#if !!tab.icon}<Icon name={tab.icon}></Icon>{/if}
                 {tab.title}
             </button>
         </li>

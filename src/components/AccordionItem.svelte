@@ -61,7 +61,7 @@ article + :global(article) {
         <h5><slot name="title">{title}</slot></h5>
 
         {#if collapsible}
-        <Icon set="light" name="chevron-down" />
+        <Icon name="chevron-down" />
         {/if}
     </header>
 

@@ -13,11 +13,11 @@
 <p>All of MaxTo's commands are divided into categories. The categories are used to group similar commands together.</p>
 
 <SectionList>
-    <SectionCard href="/reference/commands/window" title="Window" text="Move, fit, expand, contract or generally change windows." icon="window" />
+    <SectionCard href="/reference/commands/window" title="Window" text="Move, fit, expand, contract or generally change windows." icon="window-maximize" />
     <SectionCard href="/reference/commands/mouse" title="Mouse" text="Move the mouse." icon="mouse" />
-    <SectionCard href="/reference/commands/ui" title="UI" text="Open or close MaxTo windows." icon="window" />
-    <SectionCard href="/reference/commands/regions" title="Regions" text="Apply regions." icon="border-all" />
+    <SectionCard href="/reference/commands/ui" title="UI" text="Open or close MaxTo windows." icon="window-maximize" />
+    <SectionCard href="/reference/commands/regions" title="Regions" text="Apply regions." icon="grid" />
     <SectionCard href="/reference/commands/license" title="License" text="Apply, clear or check the status of your license." icon="key" />
     <SectionCard href="/reference/commands/settings" title="Settings" text="Change MaxTo settings." icon="cogs" />
-    <SectionCard href="/reference/commands/uncategorized" title="Uncategorized" text="There's just one thing in here." icon="question-circle" />
+    <SectionCard href="/reference/commands/uncategorized" title="Uncategorized" text="There's just one thing in here." icon="help-circle-outline" />
 </SectionList>

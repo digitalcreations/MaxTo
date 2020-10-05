@@ -5,9 +5,10 @@ export let icon = null;
 export let kind = 'default';
 
 const iconMap = {
-    info: 'info-circle',
-    warning: 'exclamation-circle',
-    error: 'siren'
+    info: 'information-outline',
+    warning: 'alert-circle-outline',
+    success: 'check-circle-outline',
+    danger: 'alert'
 };
 
 $: selectedIcon = icon || iconMap[kind];
@@ -62,7 +63,7 @@ section.danger {
 </style>
 
 <section class="alert" class:warning={kind == 'warning'} class:info={kind == 'info'} class:danger={kind == 'danger'} class:success={kind == 'success'}>
-    <div class="icon"><Icon set="regular" name={selectedIcon} size="giant" /></div>
+    <div class="icon"><Icon name={selectedIcon} size="giant" /></div>
 
     <slot></slot>
 </section>
