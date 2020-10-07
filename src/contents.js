@@ -62,8 +62,8 @@ export default [
 				href: "/how-to/launch-web-browser"
 			},
 			{
-				title: "Locate a specific window",
-				href: "/how-to/locate-window"
+				title: "Find any window",
+				href: "/how-to/find-window"
 			},
 			{
 				title: "Lock window in place",
