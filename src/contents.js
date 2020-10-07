@@ -124,6 +124,10 @@ export default [
 					{
 						title: "License",
 						href: '/reference/settings/license'
+					},
+					{
+						title: "Settings location",
+						href: '/reference/settings/location'
 					}
 				]
 			}

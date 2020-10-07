@@ -3,6 +3,7 @@ export let type = "default";
 export let padding = true;
 export let title = null;
 export let description = null;
+export let scrollable = false;
 </script>
 
 <style>
@@ -59,9 +60,17 @@ article > :global(.tabs nav button),
 article > :global(.tabs .content) {
     padding: var(--padding-medium);
 }
+
+.scrollable {
+    overflow-x: scroll;
+}
+
+.scrollable article {
+    width: min-content;
+}
 </style>
 
-<section class="card {type}" class:padding>
+<section class="card {type}" class:padding class:scrollable>
     {#if !!title}<header>
         <h3>{title}</h3>
         {#if !!description}<p>{description}</p>{/if}

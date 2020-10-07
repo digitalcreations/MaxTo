@@ -29,7 +29,7 @@ button:hover {
 nav {
     flex: 1;
     border-right: 1px solid var(--color-box-border);
-    min-width: 25em;
+    min-width: 20em;
 }
 
 nav article {
@@ -43,7 +43,7 @@ header {
 }
 
 main {
-    flex: 4;
+    flex: 5;
     position: relative;
     box-sizing: border-box;
     display: flex;

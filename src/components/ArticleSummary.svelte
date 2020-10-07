@@ -80,7 +80,7 @@ function scrollTo(header) {
 }
 
 .content {
-    flex: 3;
+    flex: 4;
 }
 
 aside {
@@ -120,23 +120,23 @@ a.active {
     color: var(--color-primary);
 }
 
-a :global(figure) {
+a figure {
     display: block;
     float: right;
     opacity: 0.7;
 }
 
-a :global(figure svg) {
+a figure :global(svg) {
     width: 1em;
     height: 1em;
 }
 
 
-a:hover :global(figure svg path) {
+a:hover figure :global(svg path) {
     fill: var(--color-success);
 }
 
-a.active :global(figure svg path) {
+a.active figure :global(svg path) {
     fill: var(--color-primary);
 }
 
@@ -166,7 +166,7 @@ a.active :global(figure svg path) {
                     {#if i > 0}
                     {getText(header)}
                     {:else}
-                    <Icon path={mdiArrowCollapseUp} /> Return to top
+                    <figure><Icon path={mdiArrowCollapseUp} size="0.75rem" /></figure> Return to top
                     {/if}
                 </a>
             </li>

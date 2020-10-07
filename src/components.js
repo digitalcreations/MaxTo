@@ -9,6 +9,7 @@ import Breadcrumbs from './components/Breadcrumbs.svelte';
 import Card from './components/Card.svelte';
 import Carousel from './components/Carousel.svelte';
 import Code from './components/Code.svelte';
+import CodeSegment from './components/CodeSegment.svelte';
 import Command from './components/Command.svelte';
 import CommandExample from './components/CommandExample.svelte';
 import Keys from './components/Keys.svelte';
@@ -40,6 +41,7 @@ export {
     Card,
     Carousel,
     Code,
+    CodeSegment,
     Command,
     CommandExample,
     Keys,

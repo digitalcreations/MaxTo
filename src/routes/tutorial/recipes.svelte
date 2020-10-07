@@ -37,7 +37,7 @@ import contents from '../../contents.js';
         Connecting a specific monitor
     </LinkListItem>
     
-    <LinkListItem href="/reference/triggers/windows/unlock">
+    <LinkListItem href="/reference/triggers/windows/unlocked">
         Unlocking your computer
     </LinkListItem>
 </LinkList>
@@ -58,7 +58,7 @@ import contents from '../../contents.js';
     <LinkListItem href="/reference/commands/regions/apply">
         Applying a preset
     </LinkListItem>
-    <LinkListItem href="/reference/commands/settings/toggle">
+    <LinkListItem href="/reference/commands/settings/set">
         Changing a MaxTo setting
     </LinkListItem>
 </LinkList>

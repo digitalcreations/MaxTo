@@ -5,7 +5,7 @@ import Card from './Card.svelte';
 
 export let name;
 export let alt;
-export let config;
+export let config = null;
 export let explanation = null;
 
 $: configPart = JSON
@@ -46,6 +46,7 @@ $: configPart = JSON
     <Tabs>
         <Tab title="User interface"><img src="/reference/settings/{name}.png" {alt} /></Tab>
         
+        {#if config != null}
         <Tab title="config.json">
             <pre>{@html configPart}</pre>
 
@@ -54,5 +55,8 @@ $: configPart = JSON
             </p>
             {#if !!explanation}<p>{explanation}</p>{/if}
         </Tab>
+        {/if}
+        
+        <slot />
     </Tabs>
 </Card>

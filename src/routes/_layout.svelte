@@ -102,6 +102,7 @@ reference.children.find(c => c.href == "/reference/commands").children = mapToTa
 	article {
 		padding: var(--padding-huge);
 		max-width: 56em;
+		margin: 0 auto;
 	}
 
 	.breadcrumbs {

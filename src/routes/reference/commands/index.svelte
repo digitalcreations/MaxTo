@@ -9,7 +9,7 @@
 
 <h1><b>Commands</b> are the actions of the MaxTo universe.</h1>
 
-<p>You use commands mainly to make changes, e.g. move a window into a region, move the mouse cursor or loading regions. They can be run either from the <Link href="/tutorial/cli">command line</Link> or from <Link href="/tutorial/recipe">recipes</Link>.</p>
+<p>You use commands mainly to make changes, e.g. move a window into a region, move the mouse cursor or loading regions. They can be run either from the <Link href="/tutorial/cli">command line</Link> or from <Link href="/tutorial/recipes">recipes</Link>.</p>
 
 <p>All of MaxTo's commands are divided into categories. The categories are used to group similar commands together.</p>
 
