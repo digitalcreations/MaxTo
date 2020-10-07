@@ -119,7 +119,7 @@ export default [
 					},
 					{
 						title: "Error reporting",
-						href: '/reference/settings/error_reporting'
+						href: '/reference/settings/error-reporting'
 					},
 					{
 						title: "License",

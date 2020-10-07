@@ -85,7 +85,7 @@
         </section>
     </LinkListItem>
     
-    <LinkListItem href="/reference/settings/error_reporting">
+    <LinkListItem href="/reference/settings/error-reporting">
         <SegoeIcon icon=59322></SegoeIcon>
          <section class="list-item">
             <h4>Error reporting</h4>

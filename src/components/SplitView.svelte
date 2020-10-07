@@ -78,7 +78,7 @@ section.open nav article {
     <nav>
         <header>
             <slot name="header"></slot>
-            <button type="button" on:click={() => open = !open}>
+            <button type="button" on:click={() => open = !open} aria-label="Toggle menu">
                 <Icon path={icon} size="medium" />
             </button>
         </header>

@@ -11,6 +11,7 @@ const { page } = stores();
 export let title;
 export let icon;
 export let href = null;
+export let linkText = "Read more";
 export let articles = [];
 export let color = "primary";
 </script>
@@ -95,8 +96,10 @@ p a :global(svg path) {
         {/each}
         </ul>
         
+        {#if !!href}
         <p>
-            <a {href}>Read more <Icon path={mdiArrowRight} /></a>
+            <a {href}>{linkText} <Icon path={mdiArrowRight} /></a>
         </p>
+        {/if}
     </nav>
 </Card>

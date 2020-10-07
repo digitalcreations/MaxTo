@@ -9,7 +9,7 @@ import { Card, Keys, CommandExample, Alert, Link, Tabs, Tab, SettingsExample, Ac
 <h1>Crashes in MaxTo do happen, even though we do everything we can to prevent it. The error reporting is how we do that.</h1>
 
 <SettingsExample 
-    name="error_reporting"
+    name="error-reporting"
     alt="Error reporting settings in the MaxTo user interface"
     config={{ "errorReporting": { "anonymityLevel": "MachineIdentifier", "enabled": true, "logLevel": "Information" } }}>
 </SettingsExample>
@@ -22,7 +22,7 @@ import { Card, Keys, CommandExample, Alert, Link, Tabs, Tab, SettingsExample, Ac
     title="Turn error reporting off" />
     
 <p>
-    If you turn off error reporting, errors will still be logged locally to your <Link href="/reference/logs">log files</Link>,
+    If you turn off error reporting, errors will still be logged locally to your <Link href="/reference/settings/logs">log files</Link>,
     in a bit less details. If you should encounter a bug, you would have to send your log files to us manually.
 </p>
 

@@ -96,7 +96,7 @@ a.back:hover {
 </style>
 
 <section>
-    <a href="/" class="back">
+    <a href="/" class="back" aria-label="Back">
         <Icon path={mdiArrowLeft} />
     </a>
 
