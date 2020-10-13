@@ -109,6 +109,13 @@ reference.children.find(c => c.href == "/reference/commands").children = mapToTa
 		flex: 1;
 		border-bottom: 1px solid var(--color-box-border);
 		background: white;
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+	}
+	
+	.breadcrumbs :first-child() {
+		flex: 1;
 	}
 
 @media (min-width: 992px) {
@@ -172,6 +179,28 @@ footer li {
 	margin: 0;
 	font-size: 15px;
 }
+
+a.button {
+	text-decoration: none;
+	display: inline-block;
+	font-weight: 400;
+	text-align: center;
+	vertical-align: middle;
+	user-select: none;
+	border: 1px solid transparent;
+	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	color: #fff;
+	background-color: var(--color-primary);
+	border-color: var(--color-primary-border);
+	padding: 0.625rem 1.25rem;
+	font-size: 0.875rem;
+	line-height: 1.5;
+	border-radius: 10rem;
+}
+
+a.button:hover {
+	background: hsl(var(--color-primary-hue), var(--color-primary-sat), calc(0.9 * var(--color-primary-lit)));
+}
 </style>
 
 {#if typeof segment == "object"}
@@ -189,6 +218,8 @@ footer li {
 	<main>
 		<nav class="breadcrumbs">
 			<Breadcrumbs {contents} />
+			
+			<a class="button" href="https://maxto.net">Visit website</a>
 		</nav>
 
 		<ArticleSummary>
