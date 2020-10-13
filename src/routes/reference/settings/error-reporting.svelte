@@ -52,6 +52,7 @@ import { Card, Keys, CommandExample, Alert, Link, Tabs, Tab, SettingsExample, Ac
 
 <p>
     There is currently no user interface for changing the log level, so you will have to do it by editing the configuration file.
+    The log level only affects what goes in the log files, and not what is sent to our servers in case of a crash.
 </p>
 
 <p>

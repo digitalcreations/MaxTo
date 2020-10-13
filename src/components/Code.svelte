@@ -39,6 +39,6 @@ code {
 </style>
 
 <span class="code">
-    <figure><Icon path={icon} size="0.75rem" /></figure>
+    <figure><Icon path={icon} size="0.75rem" color="var(--step-background-1)" /></figure>
     <code><slot></slot></code>
 </span>

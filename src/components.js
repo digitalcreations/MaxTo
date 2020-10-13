@@ -20,6 +20,7 @@ import SectionCard from './components/SectionCard.svelte';
 import SectionList from './components/SectionList.svelte';
 import SegoeIcon from './components/SegoeIcon.svelte';
 import SplitView from './components/SplitView.svelte';
+import StringPartVisualizer from './components/StringPartVisualizer.svelte';
 import Tab from './components/Tab.svelte';
 import TableOfContents from './components/TableOfContents.svelte';
 import Tabs from './components/Tabs.svelte';
@@ -52,6 +53,7 @@ export {
     SectionList,
     SegoeIcon,
     SettingsExample,
+    StringPartVisualizer,
     SplitView,
     Tab,
     TableOfContents,

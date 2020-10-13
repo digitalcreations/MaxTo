@@ -1,6 +1,5 @@
 <script>
-import { Keys, CommandExample, Alert, Code, CodeSegment, Card } from '../../../components.js';
-import LogLineVisualizer from '../../../components/LogLineVisualizer.svelte';
+import { Keys, CommandExample, Alert, Code, CodeSegment, Card, StringPartVisualizer } from '../../../components.js';
 import { mdiFile, mdiFolder } from '@mdi/js';
 
 $: date = new Date().toISOString().replace(/-/g, '').substring(0, 8);
@@ -52,7 +51,9 @@ will be less data for us to read when we try to figure out what is going on.
 2020-10-05 07:51:22 [Server@2.1.0.697] [Information] [MaxTo.Server.ServerApplicationContext] Received exit message. Exiting in 250ms...
 2020-10-05 07:51:22 [UserInterface@2.1.0.697] [Information] [] Deactivated "MaxTo.UI.ViewModels.NotificationIconViewModel". Closed: True</CodeSegment>
 
-<LogLineVisualizer line='2020-10-02 13:10:23 [CompanionX64@2.1.0.697] [Information] [MaxTo.Core.Settings.DefaultConfigurationLocation] Found no specified configuration location file, using default settings location "C:\Users\vegar\AppData\Roaming\MaxTo"' />
+<p>Let us take a closer look at a single log line.</p>
+
+<StringPartVisualizer line='2020-10-02 13:10:23 [CompanionX64@2.1.0.697] [Information] [MaxTo.Core.Settings.DefaultConfigurationLocation] Found no specified configuration location file, using default settings location "C:\Users\vegar\AppData\Roaming\MaxTo"' />
 
 <p>Each line has a log level, which indicates the severity of what is being reported. The log levels are, in order
 from least to most important:</p>
@@ -88,6 +89,11 @@ from least to most important:</p>
     </tr>
     </tbody>
 </table>
+
+<p>
+  You can change the log level, which affects only what goes in the log files. However, there is no user interface for 
+  changing it, so you will have to manually edit the configuration file to do so.
+</p>
 
 <h2>Installation logs</h2>
 <p>
