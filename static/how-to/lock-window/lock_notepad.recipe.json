@@ -1,0 +1,18 @@
+﻿{
+  "name": "Lock Notepad",
+  "hotkey": null,
+  "triggers": [
+    {
+      "type": "window:moved",
+      "window": "\\Notepad\\\\log - Notepad"
+    }
+  ],
+  "ingredients": [
+    {
+      "command": "window:move",
+      "parameters": {
+        "region": "top right"
+      }
+    }
+  ]
+}
