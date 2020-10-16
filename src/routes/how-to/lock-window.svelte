@@ -76,7 +76,7 @@
   <Annotation active x="40%" y="25%"  text="Select" />
   <Annotation active x="50%" y="53%"  text="Type" />
   <Annotation active x="50%" y="67%"  text="Type" />
-  <Annotation active x="65%" y="75%"  text='Click "Add Ingredient"' />
+  <Annotation active x="65%" y="75%"  text='Click "Add ingredient"' />
 </AnnotatedImage>
 
 <p>

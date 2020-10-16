@@ -43,6 +43,11 @@
     <abbr title="Multiple Document Interfaces">MDI</abbr> programs, where each document is opened in a new window 
     (like in Microsoft Word).
   </p>
+  <p>
+    If you want a tool to find the window class of a window, 
+    <Link href="https://docs.microsoft.com/en-us/visualstudio/debugger/introducing-spy-increment?view=vs-2019">Spy++</Link>,
+    which ships with Visual Studio, is the tool we use ourselves.
+  </p>
 </Alert>
 
 <p>
