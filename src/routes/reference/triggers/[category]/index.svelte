@@ -22,11 +22,21 @@ export async function preload(page) {
 </script>
 
 <script>
-  import { Alert, Card, SectionList, SectionCard, Badge, Accordion, AccordionItem, Link, Tabs, Tab, Keys, LinkList, LinkListItem, SegoeIcon } from "../../../../components.js";
+  import { Alert, Card, SectionList, SectionCard, Badge, Accordion, AccordionItem, Link, Tabs, Tab, Keys, LinkList, LinkListItem, SegoeIcon, Code } from "../../../../components.js";
+  
+  import { mdiLightningBolt } from '@mdi/js';
   
   export let category;
   export let triggers;
 </script>
+
+<style>
+h3 {
+    font-size: 1rem;
+    font-weight: normal;
+    margin: 0 0 0.5rem 0;
+}
+</style>
 
 <svelte:head>
   <title>MaxTo triggers reference</title>
@@ -38,7 +48,10 @@ export async function preload(page) {
     {#each triggers as trigger}
     <LinkListItem href={`/reference/triggers/${trigger.category}/${trigger.name}`}>
         <SegoeIcon icon={trigger.icon}></SegoeIcon>
-        {trigger.displayName} <small>{trigger.category}:{trigger.name}</small>
+        <section>
+            <h3>{trigger.displayName}</h3>
+            <Code icon={mdiLightningBolt}>{trigger.category}:{trigger.name}</Code>
+        </section>
     </LinkListItem>
     {/each}
 </LinkList>

@@ -22,11 +22,21 @@ export async function preload(page) {
 </script>
 
 <script>
-  import { Alert, Card, SectionList, SectionCard, Badge, Accordion, AccordionItem, Link, Tabs, Tab, Keys, LinkList, LinkListItem, SegoeIcon } from "../../../../components.js";
+  import { Alert, Card, SectionList, SectionCard, Badge, Accordion, AccordionItem, Link, Tabs, Tab, Keys, LinkList, LinkListItem, SegoeIcon, Code } from "../../../../components.js";
+  
+  import { mdiConsole } from '@mdi/js';
   
   export let category;
   export let commands;
 </script>
+
+<style>
+    h3 {
+        font-size: 1rem;
+        font-weight: normal;
+        margin: 0 0 0.5rem 0;
+    }
+</style>
 
 <svelte:head>
   <title>MaxTo commands reference</title>
@@ -38,7 +48,10 @@ export async function preload(page) {
     {#each commands as command}
     <LinkListItem href={`/reference/commands/${command.category}/${command.name}`}>
         <SegoeIcon icon={command.icon}></SegoeIcon>
-        {command.displayName} <small>{command.category}:{command.name}</small>
+        <section>
+            <h3>{command.displayName}</h3>
+            <Code icon={mdiConsole}>{command.category}:{command.name}</Code>
+        </section>
     </LinkListItem>
     {/each}
 </LinkList>
