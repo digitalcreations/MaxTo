@@ -1,5 +1,5 @@
 <script>
-import { Badge, Keys, Link, Alert, Carousel, AnnotatedImage } from '../../components.js';
+import { Badge, Keys, Link, Alert, AnnotatedImage } from '../../components.js';
 </script>
 
 <style>

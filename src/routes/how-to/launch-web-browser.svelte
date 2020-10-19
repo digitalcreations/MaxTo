@@ -1,5 +1,5 @@
 <script>
-    import { Carousel, Code, Alert, Accordion, AccordionItem, Link, Keys, AnnotatedImage, Annotation } from "../../components.js";
+    import { Code, Alert, Accordion, AccordionItem, Link, Keys, AnnotatedImage, Annotation } from "../../components.js";
     import { mdiConsole } from '@mdi/js';
   </script>
   
@@ -189,18 +189,16 @@
     Finally, click <b>Add ingredient</b> to add a second ingredient.
 </p>
 
-<Carousel>
-    <AnnotatedImage src="/how-to/launch-web-browser/launch_1.png" caption="Fill in path and arguments">
-        <Annotation active x="75%" y="22%"  text="Path to Google Chrome" />
-        <Annotation active x="60%" y="47%"  text="Arguments" />
-    </AnnotatedImage>
-    
-    <AnnotatedImage src="/how-to/launch-web-browser/launch_2.png" caption="Fill in window to wait for">
-        <Annotation active x="50%" y="20%"  text='Check "Search for window"' />
-        <Annotation active x="60%" y="68%"  text='Fill in "Window title"' />
-        <Annotation active x="65%" y="75%"  text='Click "Add ingredient"' />
-    </AnnotatedImage>
-</Carousel>
+<AnnotatedImage src="/how-to/launch-web-browser/launch_1.png" caption="Fill in path and arguments">
+    <Annotation active x="75%" y="22%"  text="Path to Google Chrome" />
+    <Annotation active x="60%" y="47%"  text="Arguments" />
+</AnnotatedImage>
+
+<AnnotatedImage src="/how-to/launch-web-browser/launch_2.png" caption="Fill in window to wait for">
+    <Annotation active x="50%" y="20%"  text='Check "Search for window"' />
+    <Annotation active x="60%" y="68%"  text='Fill in "Window title"' />
+    <Annotation active x="65%" y="75%"  text='Click "Add ingredient"' />
+</AnnotatedImage>
 
 <p>
     We now want to add the ingredient that will move the window to a specific region in a virtual desktop,

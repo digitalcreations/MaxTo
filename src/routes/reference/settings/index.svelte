@@ -1,5 +1,5 @@
 <script>
-  import { Alert, Card, SectionList, SectionCard, Badge, Accordion, AccordionItem, Carousel, Link, LinkList, LinkListItem, SegoeIcon, Tabs, Tab, Keys } from "../../../components.js";
+  import { Alert, Card, SectionList, SectionCard, Badge, Accordion, AccordionItem, Link, LinkList, LinkListItem, SegoeIcon, Tabs, Tab, Keys } from "../../../components.js";
 </script>
 
 <style>

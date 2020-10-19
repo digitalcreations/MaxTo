@@ -7,7 +7,6 @@ import ArticleCard from './components/ArticleCard.svelte';
 import Badge from './components/Badge.svelte';
 import Breadcrumbs from './components/Breadcrumbs.svelte';
 import Card from './components/Card.svelte';
-import Carousel from './components/Carousel.svelte';
 import Code from './components/Code.svelte';
 import CodeSegment from './components/CodeSegment.svelte';
 import Command from './components/Command.svelte';
@@ -40,7 +39,6 @@ export {
     Badge,
     Breadcrumbs,
     Card,
-    Carousel,
     Code,
     CodeSegment,
     Command,

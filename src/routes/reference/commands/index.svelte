@@ -1,5 +1,5 @@
 <script>
-  import { Alert, Card, SectionList, SectionCard, Badge, Accordion, AccordionItem, Carousel, Link, Tabs, Tab, Keys } from "../../../components.js";
+  import { Alert, Card, SectionList, SectionCard, Badge, Accordion, AccordionItem, Link, Tabs, Tab, Keys } from "../../../components.js";
   import { mdiWindowMaximize, mdiMouse, mdiGrid, mdiKey, mdiCogs, mdiHelpCircleOutline } from '@mdi/js';
 </script>
 
