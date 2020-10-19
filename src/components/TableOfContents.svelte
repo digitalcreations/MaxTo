@@ -8,21 +8,8 @@ const { page } = stores();
 
 export let contents;
 export let level = 1;
-let open = false;
 
 $: levelClass = `level-${level}`;
-
-function update() {
-    contents = [...contents];
-}
-
-function isOpen(href) {
-    return $page.path.startsWith(href);
-}
-
-function isActive(href) {
-    return $page.path == href;
-}
 </script>
 
 <style>
@@ -87,13 +74,11 @@ button  {
 }
 </style>
 
-<svelte:window on:pushstate={update} on:popstate={update} />
-
 <nav class={levelClass}>
     <ul>
         {#each contents as { title, href, children }, i}
         <li>
-            <a {href} class:active={isActive(href)}>
+            <a {href} class:active={$page.path == href}>
                 <span>{title}</span>
 
                 {#if !!children && children.length > 0}
@@ -101,7 +86,7 @@ button  {
                 {/if}
             </a>
 
-            {#if isOpen(href) && !!children && children.length > 0}
+            {#if $page.path.startsWith(href) && !!children && children.length > 0}
             <div transition:slide>
                 <svelte:self contents={children} level={level+1} ></svelte:self>
             </div>
