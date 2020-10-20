@@ -1,5 +1,7 @@
 <script>
 import { Command, CommandExample, Code } from '../../components.js';
+
+import { mdiFlag } from '@mdi/js';
 </script>
 
 <h2>Moving a window directionally</h2>
@@ -13,7 +15,7 @@ import { Command, CommandExample, Code } from '../../components.js';
 <h2>Swapping windows</h2>
 
 <p>
-  If you set the <Code>/Swap</Code> flag, and the window you are moving is currently in a region, MaxTo will check which windows are in the 
+  If you set the <Code icon={mdiFlag}>/Swap</Code> flag, and the window you are moving is currently in a region, MaxTo will check which windows are in the 
   destination region, and move all those windows into the region where the moving window came from.
 </p>
 

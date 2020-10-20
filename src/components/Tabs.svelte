@@ -13,7 +13,6 @@
 	const selectedTab = writable(null);
 
     function selectTab(tab) {
-        const i = tabs.indexOf(tab);
 		selectedTab.set(tab);
     }
 
@@ -65,6 +64,12 @@ button :global(figure) {
 }
 
 /* tabs */
+nav {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
 nav.tabs {
     border-bottom: 1px solid var(--color-box-border);
 }
@@ -103,7 +108,12 @@ nav.pills button {
 }
 nav.pills button.selected {
     background: white;
+}
 
+@media (max-width: 768px) {
+    button {
+        padding: 0.25em 0.5em;
+    }
 }
 </style>
 

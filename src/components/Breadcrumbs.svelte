@@ -83,6 +83,7 @@ a.back {
     text-decoration: none;
     border: 1px solid var(--color-box-border);
     border-radius: 100%;
+    min-width: 3rem; /* required on small screens to prevent collapse */
     width: 3rem;
     height: 3rem;
     transition: all 0.25s ease-out;
@@ -92,6 +93,18 @@ a.back:hover {
     box-shadow: var(--box-shadow);
     border-color: #999999;
     background: white;
+}
+
+@media (max-width: 768px) {
+    section {
+        width: 100%;
+        overflow-x: auto;
+    }
+    
+    ul {
+        white-space: nowrap;
+        padding-right: var(--padding-large);
+    }
 }
 </style>
 

@@ -81,6 +81,7 @@ function scrollTo(header) {
 
 .content {
     flex: 4;
+    max-width: 100vw;
 }
 
 aside {

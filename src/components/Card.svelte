@@ -68,6 +68,12 @@ article > :global(.tabs .content) {
 .scrollable article {
     width: min-content;
 }
+
+@media (max-width: 768px) {
+    article > :global(.tabs nav button) {
+        padding: var(--padding-small);
+    }
+}
 </style>
 
 <section class="card {type}" class:padding class:scrollable>

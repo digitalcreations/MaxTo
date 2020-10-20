@@ -1,5 +1,6 @@
 <script>
 import { Code, Badge, Link, Alert, LinkList, LinkListItem, AnnotatedImage, Annotation, Accordion, AccordionItem, ArticleCard, CommandExample } from '../../components.js';
+import { mdiConsole } from '@mdi/js';
 </script>
 
 <svelte:head>
@@ -38,7 +39,7 @@ import { Code, Badge, Link, Alert, LinkList, LinkListItem, AnnotatedImage, Annot
 <CommandExample category=window name=move parameters={{ direction: "Right" }} />
 
 <p>
-    If you are curious about a command, you can type: <Code>maxto help ui open</Code> to see what parameters it expects:
+    If you are curious about a command, you can type: <Code icon={mdiConsole}>maxto help ui open</Code> to see what parameters it expects:
 </p>
 
 <AnnotatedImage 
@@ -56,14 +57,14 @@ import { Code, Badge, Link, Alert, LinkList, LinkListItem, AnnotatedImage, Annot
 
 <Accordion collapsible={false}>
     <AccordionItem title="Start MaxTo">
-        <Code>maxto service start</Code>
+        <Code icon={mdiConsole}>maxto service start</Code>
     </AccordionItem>
     
     <AccordionItem title="Stop MaxTo">
-        <Code>maxto service stop</Code>
+        <Code icon={mdiConsole}>maxto service stop</Code>
     </AccordionItem>
     
     <AccordionItem title="Restart MaxTo">
-        <Code>maxto service restart</Code>
+        <Code icon={mdiConsole}>maxto service restart</Code>
     </AccordionItem>
 </Accordion>

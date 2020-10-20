@@ -201,6 +201,16 @@ a.button {
 a.button:hover {
 	background: hsl(var(--color-primary-hue), var(--color-primary-sat), calc(0.9 * var(--color-primary-lit)));
 }
+
+@media (max-width: 768px) {
+    a.button {
+		display: none;
+	}
+	
+	article {
+		padding: var(--padding-medium);
+	}
+}
 </style>
 
 {#if typeof segment == "object"}

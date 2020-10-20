@@ -76,7 +76,7 @@ h2 {
 	color: #000;
 	position: relative;
 	font-size: 1.5rem;
-	line-height: 3.75rem;
+	line-height: 2.5em;
 	flex: 0;
 	width: 100%;
 	margin-bottom: 15px;
@@ -213,4 +213,10 @@ ol li li:before {
 
 ol li li:not(:first-child) {
     margin-top: .5rem;
+}
+
+@media (max-width: 768px) {
+	h1 {
+		margin: 1em 0;
+	}
 }

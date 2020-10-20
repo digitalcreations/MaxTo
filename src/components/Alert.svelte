@@ -60,6 +60,13 @@ section.danger {
     top: -2rem;
     left: -2rem;
 }
+
+@media(max-width: 768px) {
+    :global(h2) {
+        margin: 0 0 0 0;
+        line-height: 1.4em;
+    }
+}
 </style>
 
 <section class="alert" class:warning={kind == 'warning'} class:info={kind == 'info'} class:danger={kind == 'danger'} class:success={kind == 'success'}>

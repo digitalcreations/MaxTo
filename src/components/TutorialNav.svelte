@@ -49,10 +49,16 @@
     {
         fill: white;
     }
+    
+    @media(max-width: 768px) {
+        .header { margin: var(--padding-medium) 0; text-align: left; }
+        nav { flex-wrap: wrap; }
+        article, aside { min-width: 100%; margin: 0; }
+    }
 </style>
 
 {#if !!next}
-<h2>What's next</h2>
+<h2 class="header">What's next</h2>
 
 <nav>
     <article>
