@@ -1,0 +1,7 @@
+﻿<svg width="180" xmlns="http://www.w3.org/2000/svg" height="180" viewBox="0 0 180 180" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 180 180">
+    <path fill="#f16522" d="m0,180 0-180 180,0 0,180" />
+    <g fill="#fff">
+        <path d="m120,91 0,32 23,0 0,15-34,0 0-7-7,0 0-48 7,0 0-10 34,0 0,18z" />
+        <path d="M70,42v31H44v8h-8v50h8v7h41V42H70z M70,123H52V88h18V123z" />
+    </g>
+</svg>
