@@ -219,4 +219,35 @@ ol li li:not(:first-child) {
 	h1 {
 		margin: 1em 0;
 	}
+	
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid var(--color-box-border); 
+	}
+	
+	td + td[data-title] {
+		padding-top: 1rem;
+	}
+	
+	td[data-title]:before { 
+		/* Now like a table header */
+		display: block;
+		/* Top/left values mimic padding */
+		font-size: var(--font-size-small);
+		color: var(--color-dark);
+		white-space: nowrap;
+		content: attr(data-title);
+	}
 }

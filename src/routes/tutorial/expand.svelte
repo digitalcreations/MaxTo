@@ -1,5 +1,6 @@
 <script>
 import { Badge, Keys, Link, Alert, AnnotatedImage } from '../../components.js';
+import { responsiveTable } from '../../actions/responsiveTable.js';
 </script>
 
 <style>
@@ -25,7 +26,7 @@ import { Badge, Keys, Link, Alert, AnnotatedImage } from '../../components.js';
   There are 8 keyboard shortcuts to learn:
 </p>
 
-<table>
+<table use:responsiveTable>
   <thead>
     <tr>
       <th>Expand</th>

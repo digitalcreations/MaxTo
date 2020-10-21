@@ -1,5 +1,6 @@
 <script>
 import Card from './Card.svelte';
+import { responsiveTable } from "../actions/responsiveTable.js";
 
 const modes =
 {
@@ -100,7 +101,7 @@ table {
 </Card>
 
 {#if showTable}
-<table>
+<table use:responsiveTable>
     <thead>
     <tr>
     <th>Part</th>

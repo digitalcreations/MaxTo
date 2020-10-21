@@ -1,5 +1,6 @@
 <script>
 import { Badge, Keys, Link, Alert } from '../../components.js';
+import { responsiveTable } from '../../actions/responsiveTable.js';
 </script>
 
 <style>
@@ -27,7 +28,7 @@ td {
 <p>
   But although the actual keys your press are the same, what happens when you press them isn't. Here is an overview:
 </p>
-<table>
+<table use:responsiveTable>
     <thead>
         <tr>
             <th>Keyboard shortcut</th>
@@ -80,7 +81,7 @@ td {
     is more interesting.
 </p>
 
-<table>
+<table use:responsiveTable>
     <thead>
         <tr>
             <th>Keyboard shortcut</th>

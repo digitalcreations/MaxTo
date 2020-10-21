@@ -1,5 +1,6 @@
 <script>
 import { Keys, CommandExample, Alert, Code, CodeSegment, Card, StringPartVisualizer } from '../../../components.js';
+import { responsiveTable } from '../../../actions/responsiveTable.js';
 import { mdiFile, mdiFolder } from '@mdi/js';
 
 $: date = new Date().toISOString().replace(/-/g, '').substring(0, 8);
@@ -58,7 +59,7 @@ will be less data for us to read when we try to figure out what is going on.
 <p>Each line has a log level, which indicates the severity of what is being reported. The log levels are, in order
 from least to most important:</p>
 
-<table>
+<table use:responsiveTable>
     <thead>
     <tr>
         <th>Level</th>

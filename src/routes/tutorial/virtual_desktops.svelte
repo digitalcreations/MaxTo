@@ -1,5 +1,6 @@
 <script>
 import { Keys, AnnotatedImage, Annotation, Alert, Link, SectionCard, SectionList } from '../../components.js';
+import { responsiveTable } from '../../actions/responsiveTable.js';
 import { mdiFrequentlyAskedQuestions, mdiNotebook } from '@mdi/js';
 </script>
 
@@ -69,7 +70,7 @@ table:not(.bordered) td:first-child {
     These keyboard shortcuts help you navigate your virtual desktops quickly.
 </p>
 
-<table>
+<table use:responsiveTable>
     <thead>
         <tr>
             <th>Keyboard shortcut</th>
@@ -107,7 +108,7 @@ table:not(.bordered) td:first-child {
     MaxTo introduces a few extra, default keyboard shortcuts that allow you to quickly move windows between virtual desktops.
 </p>
 
-<table>
+<table use:responsiveTable>
     <thead>
         <tr>
             <th>Keyboard shortcut</th>

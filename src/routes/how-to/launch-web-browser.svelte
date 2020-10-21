@@ -1,5 +1,6 @@
 <script>
     import { Code, Alert, Accordion, AccordionItem, Link, Keys, AnnotatedImage, Annotation } from "../../components.js";
+    import { responsiveTable } from '../../actions/responsiveTable.js';
     import { mdiConsole } from '@mdi/js';
   </script>
   
@@ -56,7 +57,7 @@
             The most helpful switches I found are:
         </p>
         
-        <table>
+        <table use:responsiveTable>
             <thead>
                 <tr>
                     <th>Flag</th>
@@ -82,7 +83,7 @@
         
         <p>The most interesting switches we found were:</p>
         
-        <table>
+        <table use:responsiveTable>
             <thead>
                 <tr>
                     <th>Flag</th>
