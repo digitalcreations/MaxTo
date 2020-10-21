@@ -126,8 +126,14 @@ reference.children.find(c => c.href == "/reference/commands").children = mapToTa
 
 footer {
 	background: #262f36;
-	display: flex;
-	padding: 100px calc(3* var(--padding-large));
+	padding: var(--padding-large);
+}
+
+@media (min-width: 769px) {
+	footer {
+		display: flex;
+		padding: 100px calc(3* var(--padding-large));
+	}	
 }
 
 footer section:first-child {

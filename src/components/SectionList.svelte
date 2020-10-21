@@ -9,6 +9,17 @@ section {
 section > :global(*) {
     margin: 0 var(--padding-small) var(--padding-medium);
 }
+
+@media (max-width: 768px) {
+    section {
+        margin-right: var(--padding-small);
+    }
+    
+    section > :global(*) {
+        min-width: 100%;
+        margin: 0 var(--padding-small) var(--padding-small);
+    }
+}
 </style>
 
 <section>

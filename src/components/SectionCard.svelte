@@ -47,6 +47,12 @@ export let href;
         opacity: 0.7;
         margin-bottom: var(--padding-medium);
     }
+    
+    @media (max-width: 768px) {
+        a > :global(.card) {
+            margin-bottom: 0;
+        }
+    }
 </style>
 
 <a rel=prefetch {href}>
