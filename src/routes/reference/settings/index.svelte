@@ -89,7 +89,7 @@
         <SegoeIcon icon=59322></SegoeIcon>
          <section class="list-item">
             <h4>Error reporting</h4>
-            <p>Change how (and if) MaxTO reports errors to the developers.</p>
+            <p>Change how (and if) MaxTo reports errors to the developers.</p>
         </section>
     </LinkListItem>
     
