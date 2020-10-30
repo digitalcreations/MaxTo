@@ -17,6 +17,8 @@
 
 <script>
 import { ArticleSummary, SplitView, TableOfContents, Badge, Breadcrumbs } from '../components.js';
+import GoogleAnalytics from 'sapper-google-analytics/GoogleAnalytics.svelte';
+import { stores } from '@sapper/app';
 import contents from '../contents.js';
 
 export let segment;
@@ -218,6 +220,8 @@ a.button:hover {
 	}
 }
 </style>
+
+<GoogleAnalytics {stores} id="G-XPPQYFYH15" />
 
 {#if typeof segment == "object"}
 <slot></slot>
