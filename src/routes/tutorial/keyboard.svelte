@@ -62,18 +62,6 @@ td {
   behavior is more consistent; the window will go to the region to the left.
 </p>
 
-<Alert kind=info>
-    <h2>Working with Windows without MaxTo?</h2>
-    <p>
-      We have a deep-dive into how you work effectively with Windows' built-in window management features, including 
-      the default keyboard shortcuts.
-    </p>
-    
-    <p>
-      See <Link href="/how-to/windows-without-maxto">how to use Windows without MaxTo</Link> if you are interested.
-    </p>
-</Alert>
-
 <h2>Swapping windows</h2>
 <p>
     When you use the move keyboard shortcuts above, only the foreground window is affected. If you are 
