@@ -20,6 +20,17 @@ td {
   MaxTo has a long range of built-in keyboard shortcuts, backed by its powerful <Link icon="map" href="/tutorial/recipes">recipes</Link>.
   In this tutorial we will explain how the default keyboard shortcuts work, and how you can use them most effectively.
 </p>
+
+<Alert kind=info>
+  <h2>Keyboard shortcuts are just recipes</h2>
+  <p>
+    I know we haven't gotten to the recipes chapter yet, but its important to note that all of MaxTo's
+    default keyboard shortcuts are just recipes. This means that you can edit them, and that after an
+    upgrade of MaxTo you may need to <Link href="/how-to/export-recipes">export the recipes</Link> you want 
+    to keep, and then reset your recipes (<b>Restore defaults, For this tab</b> under <b>Settings</b>, <b>Recipes</b>).
+  </p>
+</Alert>
+
 <h2>Placing windows into regions</h2>
 <p>
   MaxTo overrides some of the default Windows shortcuts, specifically the <Keys combination="Windows+arrow keys"></Keys> shortcuts.

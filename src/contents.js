@@ -68,6 +68,10 @@ export default [
 			{
 				title: "Lock window in place",
 				href: "/how-to/lock-window"
+			},
+			{
+				title: "Exporting recipes",
+				href: "/how-to/export-recipes"
 			}
 		]
 	},
