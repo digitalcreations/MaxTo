@@ -32,7 +32,7 @@ about: Help us get better
 
 <!-- 
 Please collect and attach log files that may be relevant, but cut them down for brevity. 
-To show us your config, please attach `%AppData\MaxTo\config.json`.
+To show us your config, please attach `%AppData%\MaxTo\config.json`.
 For MaxTo crashes, please see `%AppData%\MaxTo\maxto<timestamp>.log`. 
 For installer issues, please see `%LocalAppData%\SquirrelTemp\SquirrelSetup.log` 
 -->
