@@ -1,5 +1,6 @@
 <script>
-import { Alert, Link } from '../../components.js';
+import Alert from '$lib/components/Alert.svelte';
+import Link from '$lib/components/Link.svelte';
 </script>
 
 <svelte:head>

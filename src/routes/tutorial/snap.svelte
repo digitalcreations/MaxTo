@@ -1,6 +1,6 @@
 <script>
-import { Badge, Keys, Link, Alert, LinkList, LinkListItem, AnnotatedImage, Annotation, ArticleCard } from '../../components.js';
-import contents from '../../contents.js';
+    import Keys from '$lib/components/Keys.svelte';
+    import AnnotatedImage from '$lib/components/AnnotatedImage.svelte';
 </script>
 
 <style>

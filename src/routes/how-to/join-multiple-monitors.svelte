@@ -1,5 +1,9 @@
 <script>
-  import { Alert, Card, SectionList, SectionCard, Badge, Accordion, AccordionItem, Link, Tabs, Tab, Keys } from "../../components.js";
+    import Alert from '$lib/components/Alert.svelte';
+    import Accordion from '$lib/components/Accordion.svelte';
+    import AccordionItem from '$lib/components/AccordionItem.svelte';
+    import Link from '$lib/components/Link.svelte';
+    import Keys from '$lib/components/Keys.svelte';
 </script>
 
 <svelte:head>

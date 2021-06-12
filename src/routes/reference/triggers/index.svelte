@@ -1,5 +1,6 @@
 <script>
-  import { Alert, Card, SectionList, SectionCard, Badge, Accordion, AccordionItem, Link, Tabs, Tab, Keys } from "../../../components.js";
+  import SectionList from '$lib/components/SectionList.svelte';
+  import SectionCard from '$lib/components/SectionCard.svelte';
   import { mdiWindowMaximize, mdiMicrosoftWindows, mdiRayStartArrow, mdiGrid, mdiMonitor, mdiAccessPointNetwork, mdiKeyboard } from '@mdi/js';
 </script>
 

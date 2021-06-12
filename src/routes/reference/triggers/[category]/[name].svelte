@@ -1,28 +1,23 @@
 <script context="module">
-export async function preload(page) {
+export async function load({ page, fetch }) {
     const { category, name } = page.params;
-    const res = await this.fetch(`triggers.json`);
+    const res = await fetch(`/triggers.json`);
     const { en } = await res.json();
 
     const trigger = { category, name, ...en[`${category}:${name}`] };
     
-    return { trigger };
+    return { props: { trigger } };
 }
 </script>
 
 <script>
-import { Trigger } from '../../../../components.js';
-import { onMount } from 'svelte';
+  import Trigger from '$lib/components/Trigger.svelte';
 
-// This approach is horrible. We should use dynamic imports
-// and svelte:component, but I couldn't get that to work.
-// import WindowMove from './../../../../components/triggers/WindowMove.svelte';
+  const map = {
+  }
 
-const map = {
-}
-
-export let trigger;
-const component = (map.hasOwnProperty(trigger.category) ? map[trigger.category] : [])[trigger.name];
+  export let trigger;
+  const component = (map.hasOwnProperty(trigger.category) ? map[trigger.category] : [])[trigger.name];
 </script>
 
 <svelte:head>

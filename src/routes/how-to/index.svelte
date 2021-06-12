@@ -1,8 +1,8 @@
 <script>
-    import { Alert, Card, SectionList, SectionCard, Badge, Accordion, AccordionItem, Link, Tabs, Tab, Keys, ArticleCard } from "../../components.js";
+    import ArticleCard from "$lib/components/ArticleCard.svelte";
     import { mdiFrequentlyAskedQuestions } from '@mdi/js';
 
-    import contents from '../../contents.js';
+    import contents from '$lib/contents.js';
 </script>
 
 <svelte:head>

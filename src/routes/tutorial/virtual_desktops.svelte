@@ -1,6 +1,12 @@
 <script>
-import { Keys, AnnotatedImage, Annotation, Alert, Link, SectionCard, SectionList } from '../../components.js';
-import { responsiveTable } from '../../actions/responsiveTable.js';
+import Keys from '$lib/components/Keys.svelte';
+import AnnotatedImage from '$lib/components/AnnotatedImage.svelte';
+import Annotation from '$lib/components/Annotation.svelte';
+import Alert from '$lib/components/Alert.svelte';
+import Link from '$lib/components/Link.svelte';
+import SectionCard from '$lib/components/SectionCard.svelte';
+import SectionList from '$lib/components/SectionList.svelte';
+import { responsiveTable } from '$lib/actions/responsive_table.js';
 import { mdiFrequentlyAskedQuestions, mdiNotebook } from '@mdi/js';
 </script>
 

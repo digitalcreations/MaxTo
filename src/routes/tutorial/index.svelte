@@ -1,11 +1,3 @@
-<script>
-import { Badge, Keys, Link, Alert, AnnotatedImage } from '../../components.js';
-</script>
-
-<style>
-
-</style>
-
 <svelte:head>
   <title>MaxTo tutorial</title>
 </svelte:head>

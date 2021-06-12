@@ -1,5 +1,5 @@
 <script>
-    import { TutorialNav } from '../../components.js';
+    import TutorialNav from '$lib/components/TutorialNav.svelte';
 </script>
 
 <slot />

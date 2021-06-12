@@ -1,5 +1,10 @@
 <script>
-    import { Code, Alert, Card, SectionList, SectionCard, Badge, Accordion, AccordionItem, Link, Tabs, Tab, Keys, AnnotatedImage, StringPartVisualizer } from "../../components.js";
+    import Code from '$lib/components/Code.svelte';
+    import Alert from '$lib/components/Alert.svelte';
+    import Link from '$lib/components/Link.svelte';
+    import AnnotatedImage from '$lib/components/AnnotatedImage.svelte';
+    import StringPartVisualizer from '$lib/components/StringPartVisualizer.svelte';
+    
     import { mdiConsole, mdiFormatTitle, mdiRegex } from '@mdi/js';
   </script>
   

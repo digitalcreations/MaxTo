@@ -1,5 +1,7 @@
 <script>
-    import { Badge, Keys, Link, Alert, Code } from '../../components.js';
+    import Keys from '$lib/components/Keys.svelte';
+    import Alert from '$lib/components/Alert.svelte';
+    import Code from '$lib/components/Code.svelte';
     import { mdiFile, mdiCodeJson } from '@mdi/js';
 </script>
 
