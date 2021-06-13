@@ -13,7 +13,7 @@ import AccordionItem from '$lib/components/AccordionItem.svelte';
 <h1>Crashes in MaxTo do happen, even though we do everything we can to prevent it. The error reporting is how we do that.</h1>
 
 <SettingsExample 
-    name="error-reporting"
+    name="error_reporting"
     alt="Error reporting settings in the MaxTo user interface"
     config={{ "errorReporting": { "anonymityLevel": "MachineIdentifier", "enabled": true, "logLevel": "Information" } }}>
 </SettingsExample>

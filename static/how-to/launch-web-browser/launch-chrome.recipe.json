@@ -1,0 +1,29 @@
+﻿{
+  "enabled": true,
+  "name": "Launch Chrome",
+  "id": null,
+  "triggers": [
+    {
+      "type": "keyboard:hotkey",
+      "Hotkey": "Control+Windows+X"
+    }
+  ],
+  "ingredients": [
+    {
+      "command": "uncategorized:launch",
+      "parameters": {
+        "executable": "%ProgramFiles(x86)%\\Google\\Chrome\\Application\\chrome.exe",
+        "arguments": "--new-window https://maxto.net",
+        "waitforwindow": "\\\\\\* - MaxTo - Google Chrome"
+      }
+    },
+    {
+      "command": "window:move",
+      "parameters": {
+        "window": "\\\\\\* - MaxTo - Google Chrome",
+        "virtualdesktop": "2",
+        "region": "top right"
+      }
+    }
+  ]
+}

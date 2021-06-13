@@ -22,10 +22,6 @@ import Link from '$lib/components/Link.svelte';
     If you are familiar with Windows' Snap feature (formerly Aero Snap in Windows 7), MaxTo's
     regions can be thought of as a configurable version of that built-in Windows feature.
   </p>
-  <p>
-    For more details about working with Windows built-in window-management features, see 
-    <Link href="/how-to/windows-without-maxto">how to use Windows without MaxTo</Link>.
-  </p>
 </Alert>
 <p>
   When you start MaxTo the first time &mdash; and any time you want to later &mdash;
