@@ -1,6 +1,10 @@
 <script>
-import { Keys, CommandExample, Alert, Code, CodeSegment, Card, StringPartVisualizer } from '../../../components.js';
-import { responsiveTable } from '../../../actions/responsiveTable.js';
+import Keys from '$lib/components/Keys.svelte';
+import Alert from '$lib/components/Alert.svelte';
+import Code from '$lib/components/Code.svelte';
+import CodeSegment from '$lib/components/CodeSegment.svelte';
+import StringPartVisualizer from '$lib/components/StringPartVisualizer.svelte';
+import { responsiveTable } from '$lib/actions/responsive_table.js';
 import { mdiFile, mdiFolder } from '@mdi/js';
 
 $: date = new Date().toISOString().replace(/-/g, '').substring(0, 8);

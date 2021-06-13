@@ -1,5 +1,9 @@
 <script>
-import { Card, Keys, CommandExample, Alert, Link, Tabs, Tab, SettingsExample, Accordion, AccordionItem } from '../../../components.js';
+import CommandExample from '$lib/components/CommandExample.svelte';
+import Link from '$lib/components/Link.svelte';
+import SettingsExample from '$lib/components/SettingsExample.svelte';
+import Accordion from '$lib/components/Accordion.svelte';
+import AccordionItem from '$lib/components/AccordionItem.svelte';
 </script>
 
 <svelte:head>

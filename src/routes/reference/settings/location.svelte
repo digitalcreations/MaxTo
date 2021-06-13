@@ -1,5 +1,6 @@
 <script>
-import { Keys, CommandExample, Alert, Code } from '../../../components.js';
+import Alert from '$lib/components/Alert.svelte';
+import Code from '$lib/components/Code.svelte';
 import { mdiFile, mdiFolder } from '@mdi/js';
 </script>
 

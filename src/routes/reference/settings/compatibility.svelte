@@ -1,5 +1,6 @@
 <script>
-import { Keys, CommandExample, Alert, Link, SettingsExample } from '../../../components.js';
+import Link from '$lib/components/Link.svelte';
+import SettingsExample from '$lib/components/SettingsExample.svelte';
 </script>
 
 <svelte:head>

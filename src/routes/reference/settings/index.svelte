@@ -1,5 +1,9 @@
 <script>
-  import { Alert, Card, SectionList, SectionCard, Badge, Accordion, AccordionItem, Link, LinkList, LinkListItem, SegoeIcon, Tabs, Tab, Keys } from "../../../components.js";
+  import Link from '$lib/components/Link.svelte';
+  import LinkList from '$lib/components/LinkList.svelte';
+  import LinkListItem from '$lib/components/LinkListItem.svelte';
+  import SegoeIcon from '$lib/components/SegoeIcon.svelte';
+  import Keys from '$lib/components/Keys.svelte';
 </script>
 
 <style>

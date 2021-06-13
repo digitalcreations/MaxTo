@@ -1,5 +1,9 @@
 <script>
-import { Card, Keys, Code, CommandExample, Alert, Link, Tabs, Tab, SettingsExample, Accordion, AccordionItem } from '../../../components.js';
+import Code from '$lib/components/Code.svelte';
+import Alert from '$lib/components/Alert.svelte';
+import Link from '$lib/components/Link.svelte';
+import Tab from '$lib/components/Tab.svelte';
+import SettingsExample from '$lib/components/SettingsExample.svelte';
 import { mdiFile, mdiFolder } from '@mdi/js';
 </script>
 
