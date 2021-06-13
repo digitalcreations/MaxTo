@@ -6,7 +6,7 @@
     import Badge from '$lib/components/Badge.svelte';
     import MoreLink from '$lib/components/MoreLink.svelte';
 
-    import contents from '.$lib/components/contents.js';
+    import contents from '$lib/contents.js';
     
     import { page } from '$app/stores';
     
