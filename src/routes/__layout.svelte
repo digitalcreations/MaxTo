@@ -1,5 +1,7 @@
 <script context="module">
 	import version from '$lib/version.js';
+	import commands from '$lib/commands.js';
+	import triggers from '$lib/triggers.js';
 
 	export async function load({ fetch }) {
 		async function getJson(url) {
@@ -7,11 +9,6 @@
 			const { en } = await res.json();
 			return en;
 		}
-
-		const [ triggers, commands ] = await Promise.all([
-			getJson('/triggers.json'),
-			getJson('/commands.json')
-		]);
 		
 		return { props: { triggers, commands } };
 	}

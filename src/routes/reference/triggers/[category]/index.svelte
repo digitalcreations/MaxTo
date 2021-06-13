@@ -1,23 +1,9 @@
 <script context="module">
-function filterCategory(commands, category) {
-    return Object.keys(commands)
-        .filter(k => k.startsWith(category + ":"))
-        .map(k => map(k, commands[k]))
-}
-
-function map(name, command) {
-    return {
-        category: name.substr(0, name.indexOf(':')),
-        name: name.substr(name.indexOf(':') + 1),
-        ...command
-    };
-}
-
 export async function load({ page, fetch }) {
     const { category } = page.params;
-    const res = await fetch(`/triggers.json`);
-    const { en } = await res.json();
-    return { props: { category, triggers: filterCategory(en, category) } };
+    const res = await fetch(`/reference/triggers/${category}.json`);
+    const triggers = await res.json();
+    return { props: { category, triggers } };
 }
 </script>
 

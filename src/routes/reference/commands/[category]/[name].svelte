@@ -1,11 +1,9 @@
 <script context="module">
 export async function load({ page, fetch }) {
     const { category, name } = page.params;
-    const res = await fetch(`/commands.json`);
-    const { en } = await res.json();
+    const res = await fetch(`/reference/commands/${category}/${name}.json`);
+    const command = await res.json();
 
-    const command = { category, name, ...en[`${category}:${name}`] };
-    
     return { props: { command } };
 }
 </script>

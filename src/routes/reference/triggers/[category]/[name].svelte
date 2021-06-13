@@ -1,11 +1,9 @@
 <script context="module">
 export async function load({ page, fetch }) {
     const { category, name } = page.params;
-    const res = await fetch(`/triggers.json`);
-    const { en } = await res.json();
+    const res = await fetch(`/reference/triggers/${category}/${name}.json`);
+    const trigger = await res.json();
 
-    const trigger = { category, name, ...en[`${category}:${name}`] };
-    
     return { props: { trigger } };
 }
 </script>

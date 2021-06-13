@@ -1,4 +1,4 @@
-{
+export default {
   "en": {
     "license:apply": {
       "icon": 59182,

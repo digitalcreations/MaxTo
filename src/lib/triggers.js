@@ -1,4 +1,4 @@
-{
+export default {
   "en": {
     "keyboard:hotkey": {
       "icon": 60839,
