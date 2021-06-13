@@ -1,6 +1,6 @@
 {
-  "name": "~TODO~",
-  "version": "0.0.1",
+  "name": "MaxTo documentation",
+  "version": "2.1.0",
   "scripts": {
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",

@@ -1,4 +1,6 @@
 <script context="module">
+	import version from '$lib/version.js';
+
 	export async function load({ fetch }) {
 		async function getJson(url) {
 			const res = await fetch(url);
@@ -233,7 +235,7 @@ a.button:hover {
 	<a slot="header" class="logo" href="/">
 		<img src="/logo.svg" alt="MaxTo logo" />
 		<span>MaxTo</span> 
-		<Badge text="2.1.0" color="success" />
+		<Badge text="{version}" color="success" />
 	</a>
 	
 	<div slot="menu"><TableOfContents {contents} /></div>
