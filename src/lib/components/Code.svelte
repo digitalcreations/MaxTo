@@ -1,7 +1,9 @@
 <script>
 import Icon from 'mdi-svelte';
 
-export let icon = "console";
+import { mdiConsole } from '@mdi/js';
+
+export let icon = mdiConsole;
 </script>
 
 <style>

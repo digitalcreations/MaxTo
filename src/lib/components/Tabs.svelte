@@ -72,6 +72,7 @@ nav {
 
 nav.tabs {
     border-bottom: 1px solid var(--color-box-border);
+    overflow-y: hidden;
 }
 nav.tabs ul {
     margin-bottom: -1px;
