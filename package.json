@@ -1,5 +1,5 @@
 {
-  "name": "MaxTo documentation",
+  "name": "docs.maxto.net",
   "version": "2.1.0",
   "scripts": {
     "dev": "svelte-kit dev",
