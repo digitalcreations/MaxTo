@@ -1,5 +1,10 @@
 <script>
-import { Code, Badge, Link, Alert, LinkList, LinkListItem, AnnotatedImage, Annotation, Accordion, AccordionItem, ArticleCard, CommandExample } from '../../components.js';
+import Code from '$lib/components/Code.svelte';
+import AnnotatedImage from '$lib/components/AnnotatedImage.svelte';
+import Annotation from '$lib/components/Annotation.svelte';
+import Accordion from '$lib/components/Accordion.svelte';
+import AccordionItem from '$lib/components/AccordionItem.svelte';
+import CommandExample from '$lib/components/CommandExample.svelte';
 import { mdiConsole } from '@mdi/js';
 </script>
 

@@ -13,16 +13,19 @@ function map(name, command) {
     };
 }
 
-export async function preload(page) {
+export async function load({ page, fetch }) {
     const { category } = page.params;
-    const res = await this.fetch(`commands.json`);
+    const res = await fetch(`/commands.json`);
     const { en } = await res.json();
-    return { category, commands: filterCategory(en, category) };
+    return { props: { category, commands: filterCategory(en, category) } };
 }
 </script>
 
 <script>
-  import { Alert, Card, SectionList, SectionCard, Badge, Accordion, AccordionItem, Link, Tabs, Tab, Keys, LinkList, LinkListItem, SegoeIcon, Code } from "../../../../components.js";
+  import LinkList from '$lib/components/LinkList.svelte';
+  import LinkListItem from '$lib/components/LinkListItem.svelte';
+  import SegoeIcon from '$lib/components/SegoeIcon.svelte';
+  import Code from '$lib/components/Code.svelte';
   
   import { mdiConsole } from '@mdi/js';
   

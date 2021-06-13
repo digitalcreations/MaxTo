@@ -1,6 +1,6 @@
 <script>
-import { Badge, Keys, Link, Alert, AnnotatedImage } from '../../components.js';
-import { responsiveTable } from '../../actions/responsiveTable.js';
+  import Keys from '$lib/components/Keys.svelte';
+  import { responsiveTable } from '$lib/actions/responsive_table.js';
 </script>
 
 <style>

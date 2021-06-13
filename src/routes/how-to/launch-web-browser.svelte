@@ -1,6 +1,13 @@
 <script>
-    import { Code, Alert, Accordion, AccordionItem, Link, Keys, AnnotatedImage, Annotation } from "../../components.js";
-    import { responsiveTable } from '../../actions/responsiveTable.js';
+    import Code from '$lib/components/Code.svelte';
+    import Alert from '$lib/components/Alert.svelte';
+    import Accordion from '$lib/components/Accordion.svelte';
+    import AccordionItem from '$lib/components/AccordionItem.svelte';
+    import Link from '$lib/components/Link.svelte';
+    import Keys from '$lib/components/Keys.svelte';
+    import AnnotatedImage from '$lib/components/AnnotatedImage.svelte';
+    import Annotation from '$lib/components/Annotation.svelte';
+    import { responsiveTable } from '$lib/actions/responsive_table.js';
     import { mdiConsole } from '@mdi/js';
   </script>
   
