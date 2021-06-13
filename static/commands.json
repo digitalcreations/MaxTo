@@ -87,6 +87,20 @@
         }
       }
     },
+    "regions:select": {
+      "icon": 59621,
+      "description": "Select a preset from a list of available presets.",
+      "detailedDescription": "Use this to select a preset to apply on a given monitor whenever the command is run.",
+      "displayName": "Select preset",
+      "isRecipeCapable": true,
+      "arguments": {
+        "monitor": {
+          "title": "Monitor",
+          "description": "You can find monitors by specifying their number, their monitor handle (HMONITOR, as hexadecimal, formatted as 0xdeadbeef), or by their exact device name (\"\\\\.\\DISPLAY1\"), serial number or friendly name.",
+          "defaultDescription": "Current monitor"
+        }
+      }
+    },
     "mouse:position": {
       "icon": 60581,
       "description": "Move the mouse cursor to a specific position, window or monitor.",
@@ -120,7 +134,7 @@
       "arguments": {
         "window": {
           "title": "Window",
-          "description": "Defaults to the current foreground window.\r\n\r\nFind windows by searching for the process name, window class and window title. All parts support wildcards or regular expressions. When setting up this command in the user interface, a nice editor is provided for the separate parts.\r\n\r\nWhen searching from the command line, the syntax is: `\\[process name]\\[window class]\\[window title]`. All parts are optional, meaning you can use \"\\\\\\Untitled - Notepad\" to find the window with that title.\r\n\r\nWildcards are supported for each part. You can use regular expressions by surrounding the part with forwards slashes: \"\\\\\\/.* - Notepad/\" will find any Notepad window, and is equivalent to \"\\\\\\* - Notepad\".",
+          "description": "Defaults to the current foreground window.\r\n\r\nFind windows by searching for the process name, window class and window title. All parts support wildcards or regular expressions. When setting up this command in the user interface, a nice editor is provided for the separate parts.\r\n\r\nWhen searching from the command line, the syntax is: \\[process name]\\[window class]\\[window title]. All parts are optional, meaning you can use \"\\\\\\Untitled - Notepad\" to find the window with that title.\r\n\r\nWildcards are supported for each part. You can use regular expressions by surrounding the part with forwards slashes: \"\\\\\\/.* - Notepad/\" will find any Notepad window, and is equivalent to \"\\\\\\* - Notepad\".",
           "defaultDescription": "Foreground window"
         },
         "virtualDesktop": {
@@ -504,7 +518,7 @@
         },
         "waitForWindow": {
           "title": "Window to wait for",
-          "description": "Wait for the process to create a main window that has a window class that matches this parameter exactly, or has a window title that case-insensitively contains this parameter.",
+          "description": "Wait until a window exists that matches this query. Note that the window does not have to be from the started process, unless you limit that yourself using the process name.\r\n\r\nFind windows by searching for the process name, window class and window title. All parts support wildcards or regular expressions. When setting up this command in the user interface, a nice editor is provided for the separate parts.\r\n\r\nWhen searching from the command line, the syntax is: \\[process name]\\[window class]\\[window title]. All parts are optional, meaning you can use \"\\\\\\Untitled - Notepad\" to find the window with that title.\r\n\r\nWildcards are supported for each part. You can use regular expressions by surrounding the part with forwards slashes: \"\\\\\\/.* - Notepad/\" will find any Notepad window, and is equivalent to \"\\\\\\* - Notepad\".",
           "defaultDescription": "None"
         },
         "waitForExit": {
@@ -618,6 +632,20 @@
         }
       }
     },
+    "regions:select": {
+      "icon": 59621,
+      "description": "Select a preset from a list of available presets.",
+      "detailedDescription": "Use this to select a preset to apply on a given monitor whenever the command is run.",
+      "displayName": "Select preset",
+      "isRecipeCapable": true,
+      "arguments": {
+        "monitor": {
+          "title": "Monitor",
+          "description": "You can find monitors by specifying their number, their monitor handle (HMONITOR, as hexadecimal, formatted as 0xdeadbeef), or by their exact device name (\"\\\\.\\DISPLAY1\"), serial number or friendly name.",
+          "defaultDescription": "Current monitor"
+        }
+      }
+    },
     "mouse:position": {
       "icon": 60581,
       "description": "Move the mouse cursor to a specific position, window or monitor.",
@@ -1035,7 +1063,7 @@
         },
         "waitForWindow": {
           "title": "Window to wait for",
-          "description": "Wait for the process to create a main window that has a window class that matches this parameter exactly, or has a window title that case-insensitively contains this parameter.",
+          "description": "Wait until a window exists that matches this query. Note that the window does not have to be from the started process, unless you limit that yourself using the process name.\r\n\r\nFind windows by searching for the process name, window class and window title. All parts support wildcards or regular expressions. When setting up this command in the user interface, a nice editor is provided for the separate parts.\r\n\r\nWhen searching from the command line, the syntax is: \\[process name]\\[window class]\\[window title]. All parts are optional, meaning you can use \"\\\\\\Untitled - Notepad\" to find the window with that title.\r\n\r\nWildcards are supported for each part. You can use regular expressions by surrounding the part with forwards slashes: \"\\\\\\/.* - Notepad/\" will find any Notepad window, and is equivalent to \"\\\\\\* - Notepad\".",
           "defaultDescription": "None"
         },
         "waitForExit": {
@@ -1146,6 +1174,20 @@
           "title": "Zeitüberschreitung in Millisekunden.",
           "description": "Anzahl der Millisekunden, die gewartet wird, bevor die Hervorhebung ausgeblendet wird.",
           "defaultDescription": null
+        }
+      }
+    },
+    "regions:select": {
+      "icon": 59621,
+      "description": "Select a preset from a list of available presets.",
+      "detailedDescription": "Use this to select a preset to apply on a given monitor whenever the command is run.",
+      "displayName": "Select preset",
+      "isRecipeCapable": true,
+      "arguments": {
+        "monitor": {
+          "title": "Monitor",
+          "description": "You can find monitors by specifying their number, their monitor handle (HMONITOR, as hexadecimal, formatted as 0xdeadbeef), or by their exact device name (\"\\\\.\\DISPLAY1\"), serial number or friendly name.",
+          "defaultDescription": "Current monitor"
         }
       }
     },
@@ -1680,6 +1722,20 @@
         }
       }
     },
+    "regions:select": {
+      "icon": 59621,
+      "description": "Select a preset from a list of available presets.",
+      "detailedDescription": "Use this to select a preset to apply on a given monitor whenever the command is run.",
+      "displayName": "Select preset",
+      "isRecipeCapable": true,
+      "arguments": {
+        "monitor": {
+          "title": "Monitor",
+          "description": "You can find monitors by specifying their number, their monitor handle (HMONITOR, as hexadecimal, formatted as 0xdeadbeef), or by their exact device name (\"\\\\.\\DISPLAY1\"), serial number or friendly name.",
+          "defaultDescription": "Current monitor"
+        }
+      }
+    },
     "mouse:position": {
       "icon": 60581,
       "description": "Move the mouse cursor to a specific position, window or monitor.",
@@ -2208,6 +2264,20 @@
           "title": "Délai d'attente en millisecondes",
           "description": "Nombre de millisecondes d'attente avant de masquer la sélection.",
           "defaultDescription": null
+        }
+      }
+    },
+    "regions:select": {
+      "icon": 59621,
+      "description": "Select a preset from a list of available presets.",
+      "detailedDescription": "Use this to select a preset to apply on a given monitor whenever the command is run.",
+      "displayName": "Select preset",
+      "isRecipeCapable": true,
+      "arguments": {
+        "monitor": {
+          "title": "Monitor",
+          "description": "You can find monitors by specifying their number, their monitor handle (HMONITOR, as hexadecimal, formatted as 0xdeadbeef), or by their exact device name (\"\\\\.\\DISPLAY1\"), serial number or friendly name.",
+          "defaultDescription": "Current monitor"
         }
       }
     },
@@ -2742,6 +2812,20 @@
         }
       }
     },
+    "regions:select": {
+      "icon": 59621,
+      "description": "Select a preset from a list of available presets.",
+      "detailedDescription": "Use this to select a preset to apply on a given monitor whenever the command is run.",
+      "displayName": "Select preset",
+      "isRecipeCapable": true,
+      "arguments": {
+        "monitor": {
+          "title": "Monitor",
+          "description": "You can find monitors by specifying their number, their monitor handle (HMONITOR, as hexadecimal, formatted as 0xdeadbeef), or by their exact device name (\"\\\\.\\DISPLAY1\"), serial number or friendly name.",
+          "defaultDescription": "Current monitor"
+        }
+      }
+    },
     "mouse:position": {
       "icon": 60581,
       "description": "Move the mouse cursor to a specific position, window or monitor.",
@@ -3159,7 +3243,7 @@
         },
         "waitForWindow": {
           "title": "Window to wait for",
-          "description": "Wait for the process to create a main window that has a window class that matches this parameter exactly, or has a window title that case-insensitively contains this parameter.",
+          "description": "Wait until a window exists that matches this query. Note that the window does not have to be from the started process, unless you limit that yourself using the process name.\r\n\r\nFind windows by searching for the process name, window class and window title. All parts support wildcards or regular expressions. When setting up this command in the user interface, a nice editor is provided for the separate parts.\r\n\r\nWhen searching from the command line, the syntax is: \\[process name]\\[window class]\\[window title]. All parts are optional, meaning you can use \"\\\\\\Untitled - Notepad\" to find the window with that title.\r\n\r\nWildcards are supported for each part. You can use regular expressions by surrounding the part with forwards slashes: \"\\\\\\/.* - Notepad/\" will find any Notepad window, and is equivalent to \"\\\\\\* - Notepad\".",
           "defaultDescription": "None"
         },
         "waitForExit": {
@@ -3273,6 +3357,20 @@
         }
       }
     },
+    "regions:select": {
+      "icon": 59621,
+      "description": "Select a preset from a list of available presets.",
+      "detailedDescription": "Use this to select a preset to apply on a given monitor whenever the command is run.",
+      "displayName": "Select preset",
+      "isRecipeCapable": true,
+      "arguments": {
+        "monitor": {
+          "title": "Monitor",
+          "description": "You can find monitors by specifying their number, their monitor handle (HMONITOR, as hexadecimal, formatted as 0xdeadbeef), or by their exact device name (\"\\\\.\\DISPLAY1\"), serial number or friendly name.",
+          "defaultDescription": "Current monitor"
+        }
+      }
+    },
     "mouse:position": {
       "icon": 60581,
       "description": "Move the mouse cursor to a specific position, window or monitor.",
@@ -3690,7 +3788,7 @@
         },
         "waitForWindow": {
           "title": "Window to wait for",
-          "description": "Wait for the process to create a main window that has a window class that matches this parameter exactly, or has a window title that case-insensitively contains this parameter.",
+          "description": "Wait until a window exists that matches this query. Note that the window does not have to be from the started process, unless you limit that yourself using the process name.\r\n\r\nFind windows by searching for the process name, window class and window title. All parts support wildcards or regular expressions. When setting up this command in the user interface, a nice editor is provided for the separate parts.\r\n\r\nWhen searching from the command line, the syntax is: \\[process name]\\[window class]\\[window title]. All parts are optional, meaning you can use \"\\\\\\Untitled - Notepad\" to find the window with that title.\r\n\r\nWildcards are supported for each part. You can use regular expressions by surrounding the part with forwards slashes: \"\\\\\\/.* - Notepad/\" will find any Notepad window, and is equivalent to \"\\\\\\* - Notepad\".",
           "defaultDescription": "None"
         },
         "waitForExit": {
@@ -3801,6 +3899,20 @@
           "title": "밀리 초 단위의 시간 제한",
           "description": "강조 표시를 숨기기 전에 대기할 밀리 초 단위 시간입니다.",
           "defaultDescription": null
+        }
+      }
+    },
+    "regions:select": {
+      "icon": 59621,
+      "description": "Select a preset from a list of available presets.",
+      "detailedDescription": "Use this to select a preset to apply on a given monitor whenever the command is run.",
+      "displayName": "Select preset",
+      "isRecipeCapable": true,
+      "arguments": {
+        "monitor": {
+          "title": "Monitor",
+          "description": "You can find monitors by specifying their number, their monitor handle (HMONITOR, as hexadecimal, formatted as 0xdeadbeef), or by their exact device name (\"\\\\.\\DISPLAY1\"), serial number or friendly name.",
+          "defaultDescription": "Current monitor"
         }
       }
     },
@@ -4335,6 +4447,20 @@
         }
       }
     },
+    "regions:select": {
+      "icon": 59621,
+      "description": "Select a preset from a list of available presets.",
+      "detailedDescription": "Use this to select a preset to apply on a given monitor whenever the command is run.",
+      "displayName": "Select preset",
+      "isRecipeCapable": true,
+      "arguments": {
+        "monitor": {
+          "title": "Monitor",
+          "description": "You can find monitors by specifying their number, their monitor handle (HMONITOR, as hexadecimal, formatted as 0xdeadbeef), or by their exact device name (\"\\\\.\\DISPLAY1\"), serial number or friendly name.",
+          "defaultDescription": "Current monitor"
+        }
+      }
+    },
     "mouse:position": {
       "icon": 60581,
       "description": "Move the mouse cursor to a specific position, window or monitor.",
@@ -4866,6 +4992,20 @@
         }
       }
     },
+    "regions:select": {
+      "icon": 59621,
+      "description": "Select a preset from a list of available presets.",
+      "detailedDescription": "Use this to select a preset to apply on a given monitor whenever the command is run.",
+      "displayName": "Select preset",
+      "isRecipeCapable": true,
+      "arguments": {
+        "monitor": {
+          "title": "Monitor",
+          "description": "You can find monitors by specifying their number, their monitor handle (HMONITOR, as hexadecimal, formatted as 0xdeadbeef), or by their exact device name (\"\\\\.\\DISPLAY1\"), serial number or friendly name.",
+          "defaultDescription": "Current monitor"
+        }
+      }
+    },
     "mouse:position": {
       "icon": 60581,
       "description": "Move the mouse cursor to a specific position, window or monitor.",
@@ -5283,7 +5423,7 @@
         },
         "waitForWindow": {
           "title": "Window to wait for",
-          "description": "Wait for the process to create a main window that has a window class that matches this parameter exactly, or has a window title that case-insensitively contains this parameter.",
+          "description": "Wait until a window exists that matches this query. Note that the window does not have to be from the started process, unless you limit that yourself using the process name.\r\n\r\nFind windows by searching for the process name, window class and window title. All parts support wildcards or regular expressions. When setting up this command in the user interface, a nice editor is provided for the separate parts.\r\n\r\nWhen searching from the command line, the syntax is: \\[process name]\\[window class]\\[window title]. All parts are optional, meaning you can use \"\\\\\\Untitled - Notepad\" to find the window with that title.\r\n\r\nWildcards are supported for each part. You can use regular expressions by surrounding the part with forwards slashes: \"\\\\\\/.* - Notepad/\" will find any Notepad window, and is equivalent to \"\\\\\\* - Notepad\".",
           "defaultDescription": "None"
         },
         "waitForExit": {
@@ -5394,6 +5534,20 @@
           "title": "Tempo limite em milisegundos",
           "description": "Número de milissegundos a aguardar antes de ocultar o realce.",
           "defaultDescription": null
+        }
+      }
+    },
+    "regions:select": {
+      "icon": 59621,
+      "description": "Select a preset from a list of available presets.",
+      "detailedDescription": "Use this to select a preset to apply on a given monitor whenever the command is run.",
+      "displayName": "Select preset",
+      "isRecipeCapable": true,
+      "arguments": {
+        "monitor": {
+          "title": "Monitor",
+          "description": "You can find monitors by specifying their number, their monitor handle (HMONITOR, as hexadecimal, formatted as 0xdeadbeef), or by their exact device name (\"\\\\.\\DISPLAY1\"), serial number or friendly name.",
+          "defaultDescription": "Current monitor"
         }
       }
     },
@@ -5928,6 +6082,20 @@
         }
       }
     },
+    "regions:select": {
+      "icon": 59621,
+      "description": "Select a preset from a list of available presets.",
+      "detailedDescription": "Use this to select a preset to apply on a given monitor whenever the command is run.",
+      "displayName": "Select preset",
+      "isRecipeCapable": true,
+      "arguments": {
+        "monitor": {
+          "title": "Monitor",
+          "description": "You can find monitors by specifying their number, their monitor handle (HMONITOR, as hexadecimal, formatted as 0xdeadbeef), or by their exact device name (\"\\\\.\\DISPLAY1\"), serial number or friendly name.",
+          "defaultDescription": "Current monitor"
+        }
+      }
+    },
     "mouse:position": {
       "icon": 60581,
       "description": "Move the mouse cursor to a specific position, window or monitor.",
@@ -6456,6 +6624,20 @@
           "title": "Časový interval (v ms)",
           "description": "Počet ms pred skrytím zvýraznenia.",
           "defaultDescription": null
+        }
+      }
+    },
+    "regions:select": {
+      "icon": 59621,
+      "description": "Select a preset from a list of available presets.",
+      "detailedDescription": "Use this to select a preset to apply on a given monitor whenever the command is run.",
+      "displayName": "Select preset",
+      "isRecipeCapable": true,
+      "arguments": {
+        "monitor": {
+          "title": "Monitor",
+          "description": "You can find monitors by specifying their number, their monitor handle (HMONITOR, as hexadecimal, formatted as 0xdeadbeef), or by their exact device name (\"\\\\.\\DISPLAY1\"), serial number or friendly name.",
+          "defaultDescription": "Current monitor"
         }
       }
     },
@@ -6990,6 +7172,20 @@
         }
       }
     },
+    "regions:select": {
+      "icon": 59621,
+      "description": "Select a preset from a list of available presets.",
+      "detailedDescription": "Use this to select a preset to apply on a given monitor whenever the command is run.",
+      "displayName": "Select preset",
+      "isRecipeCapable": true,
+      "arguments": {
+        "monitor": {
+          "title": "Monitor",
+          "description": "You can find monitors by specifying their number, their monitor handle (HMONITOR, as hexadecimal, formatted as 0xdeadbeef), or by their exact device name (\"\\\\.\\DISPLAY1\"), serial number or friendly name.",
+          "defaultDescription": "Current monitor"
+        }
+      }
+    },
     "mouse:position": {
       "icon": 60581,
       "description": "Move the mouse cursor to a specific position, window or monitor.",
@@ -7407,7 +7603,7 @@
         },
         "waitForWindow": {
           "title": "Window to wait for",
-          "description": "Wait for the process to create a main window that has a window class that matches this parameter exactly, or has a window title that case-insensitively contains this parameter.",
+          "description": "Wait until a window exists that matches this query. Note that the window does not have to be from the started process, unless you limit that yourself using the process name.\r\n\r\nFind windows by searching for the process name, window class and window title. All parts support wildcards or regular expressions. When setting up this command in the user interface, a nice editor is provided for the separate parts.\r\n\r\nWhen searching from the command line, the syntax is: \\[process name]\\[window class]\\[window title]. All parts are optional, meaning you can use \"\\\\\\Untitled - Notepad\" to find the window with that title.\r\n\r\nWildcards are supported for each part. You can use regular expressions by surrounding the part with forwards slashes: \"\\\\\\/.* - Notepad/\" will find any Notepad window, and is equivalent to \"\\\\\\* - Notepad\".",
           "defaultDescription": "None"
         },
         "waitForExit": {
@@ -7518,6 +7714,20 @@
           "title": "超时时间（毫秒）",
           "description": "隐藏高光前的等待时间",
           "defaultDescription": null
+        }
+      }
+    },
+    "regions:select": {
+      "icon": 59621,
+      "description": "Select a preset from a list of available presets.",
+      "detailedDescription": "Use this to select a preset to apply on a given monitor whenever the command is run.",
+      "displayName": "Select preset",
+      "isRecipeCapable": true,
+      "arguments": {
+        "monitor": {
+          "title": "Monitor",
+          "description": "You can find monitors by specifying their number, their monitor handle (HMONITOR, as hexadecimal, formatted as 0xdeadbeef), or by their exact device name (\"\\\\.\\DISPLAY1\"), serial number or friendly name.",
+          "defaultDescription": "Current monitor"
         }
       }
     },
@@ -8052,6 +8262,20 @@
         }
       }
     },
+    "regions:select": {
+      "icon": 59621,
+      "description": "Select a preset from a list of available presets.",
+      "detailedDescription": "Use this to select a preset to apply on a given monitor whenever the command is run.",
+      "displayName": "Select preset",
+      "isRecipeCapable": true,
+      "arguments": {
+        "monitor": {
+          "title": "Monitor",
+          "description": "You can find monitors by specifying their number, their monitor handle (HMONITOR, as hexadecimal, formatted as 0xdeadbeef), or by their exact device name (\"\\\\.\\DISPLAY1\"), serial number or friendly name.",
+          "defaultDescription": "Current monitor"
+        }
+      }
+    },
     "mouse:position": {
       "icon": 60581,
       "description": "Move the mouse cursor to a specific position, window or monitor.",
@@ -8469,7 +8693,7 @@
         },
         "waitForWindow": {
           "title": "Window to wait for",
-          "description": "Wait for the process to create a main window that has a window class that matches this parameter exactly, or has a window title that case-insensitively contains this parameter.",
+          "description": "Wait until a window exists that matches this query. Note that the window does not have to be from the started process, unless you limit that yourself using the process name.\r\n\r\nFind windows by searching for the process name, window class and window title. All parts support wildcards or regular expressions. When setting up this command in the user interface, a nice editor is provided for the separate parts.\r\n\r\nWhen searching from the command line, the syntax is: \\[process name]\\[window class]\\[window title]. All parts are optional, meaning you can use \"\\\\\\Untitled - Notepad\" to find the window with that title.\r\n\r\nWildcards are supported for each part. You can use regular expressions by surrounding the part with forwards slashes: \"\\\\\\/.* - Notepad/\" will find any Notepad window, and is equivalent to \"\\\\\\* - Notepad\".",
           "defaultDescription": "None"
         },
         "waitForExit": {
@@ -8583,6 +8807,20 @@
         }
       }
     },
+    "regions:select": {
+      "icon": 59621,
+      "description": "Select a preset from a list of available presets.",
+      "detailedDescription": "Use this to select a preset to apply on a given monitor whenever the command is run.",
+      "displayName": "Select preset",
+      "isRecipeCapable": true,
+      "arguments": {
+        "monitor": {
+          "title": "Monitor",
+          "description": "You can find monitors by specifying their number, their monitor handle (HMONITOR, as hexadecimal, formatted as 0xdeadbeef), or by their exact device name (\"\\\\.\\DISPLAY1\"), serial number or friendly name.",
+          "defaultDescription": "Current monitor"
+        }
+      }
+    },
     "mouse:position": {
       "icon": 60581,
       "description": "Move the mouse cursor to a specific position, window or monitor.",
@@ -9000,7 +9238,7 @@
         },
         "waitForWindow": {
           "title": "Window to wait for",
-          "description": "Wait for the process to create a main window that has a window class that matches this parameter exactly, or has a window title that case-insensitively contains this parameter.",
+          "description": "Wait until a window exists that matches this query. Note that the window does not have to be from the started process, unless you limit that yourself using the process name.\r\n\r\nFind windows by searching for the process name, window class and window title. All parts support wildcards or regular expressions. When setting up this command in the user interface, a nice editor is provided for the separate parts.\r\n\r\nWhen searching from the command line, the syntax is: \\[process name]\\[window class]\\[window title]. All parts are optional, meaning you can use \"\\\\\\Untitled - Notepad\" to find the window with that title.\r\n\r\nWildcards are supported for each part. You can use regular expressions by surrounding the part with forwards slashes: \"\\\\\\/.* - Notepad/\" will find any Notepad window, and is equivalent to \"\\\\\\* - Notepad\".",
           "defaultDescription": "None"
         },
         "waitForExit": {
